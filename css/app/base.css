@@ -116,7 +116,7 @@ header li + li:before {
   display: block;
   width: 110px;
   height: 60px;
-  background: url("../../images/logo.gif") no-repeat;
+  background: url("../../images/logo.png") no-repeat;
 }
 /*左菜单*/
 .content-wrapper {
