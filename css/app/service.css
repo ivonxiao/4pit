@@ -1,0 +1,91 @@
+.ads-slides {
+  min-height: 250px;
+}
+.content-wrapper {
+  background-color: #f4f4f4;
+}
+.content-wrapper section {
+  float: left;
+  width: 280px;
+  padding-top: 30px;
+}
+.content-wrapper section li {
+  height: 40px;
+  line-height: 40px;
+  margin-bottom: 10px;
+  padding-left: 15px;
+  transition: padding ease 0.3s;
+}
+.content-wrapper section li.active {
+  background-color: #fff;
+  position: relative;
+  right: -1px;
+}
+.content-wrapper section li.active a {
+  color: #0e65b4;
+}
+.content-wrapper section li:hover {
+  background-color: #eaeaea;
+  padding-left: 20px;
+}
+.content-wrapper section a {
+  display: block;
+  color: #333;
+}
+.content-wrapper .main-content {
+  float: left;
+  width: calc(100% - 280px);
+  min-height: 200px;
+  border-left: 1px solid #e3e3e3;
+  background-color: #fff;
+  padding: 0 15px 50px 30px;
+}
+.content-wrapper .main-content pre {
+  line-height: 2;
+  background-color: inherit;
+  border: none;
+  font-size: inherit;
+}
+.content-wrapper .content-title {
+  position: relative;
+  font-size: 18px;
+  padding: 9.5px;
+  border-bottom: 1px solid #e3e3e3;
+}
+.content-wrapper .content-title:before {
+  content: '';
+  position: absolute;
+  left: -9.5px;
+  bottom: 0;
+  background-color: #0e65b4;
+  width: 6em;
+  height: 3px;
+}
+/*服务对象*/
+.main-content.service-target-content p {
+  color: #0e65b4;
+}
+.main-content.service-target-content ol {
+  list-style-type: decimal;
+  list-style-position: inside;
+  line-height: 1.8;
+}
+.main-content.service-target-content h3 {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 16px;
+  color: #fff;
+}
+.main-content.service-target-content .bg-static-rect1 {
+  background-color: #7bc5a0;
+}
+.main-content.service-target-content .bg-static-rect2 {
+  background-color: #8e84b8;
+}
+.main-content.service-target-content .bg-static-rect3 {
+  background-color: #99ae6b;
+}
+.main-content.service-target-content .bg-static-rect4 {
+  background-color: #d3a574;
+}

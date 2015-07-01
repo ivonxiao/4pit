@@ -1,0 +1,96 @@
+@import (less) "variable.less";
+.ads-slides {
+	min-height: 250px;
+}
+.content-wrapper {
+	@sidebar-width: 280px;
+	background-color: @bg-content;
+	section {
+		float: left;
+		width: @sidebar-width;
+		padding-top: 30px;
+		li {
+			height: 40px;
+			line-height: 40px;
+			margin-bottom: 10px;
+			padding-left: 15px;
+			transition: padding ease 0.3s;
+			&.active {
+				background-color: #fff;
+				position: relative;
+				right: -1px;
+				a {
+					color: @sidebar-link-color-active;
+				}
+			}
+			&:hover {
+				background-color: @bg-sidebar-nav-hover;
+				padding-left: 20px;
+			}
+		}
+		a {
+			display: block;
+			color: #333;
+		}
+	}
+	.main-content {
+		float: left;
+		width: e("calc(100% - @{sidebar-width})");
+		min-height: 200px;
+		border-left: 1px solid #e3e3e3;
+		background-color: #fff;
+		padding: 0 15px 50px 30px;
+		pre {
+			line-height: 2;
+			background-color: inherit;
+			border:none;
+			font-size: inherit;
+		}
+	}
+	.content-title {
+		@padding-width: 9.5px;
+		position: relative;
+		font-size: 18px;
+		padding: @padding-width;
+		border-bottom: 1px solid @border-color;
+		&:before {
+			content: '';
+			position: absolute;
+			left: -@padding-width;
+			bottom: 0;
+			background-color: @highlight-color;
+			width: 6em;
+			height: 3px;
+		}
+	}
+}
+/*服务对象*/
+.main-content.service-target-content {
+	p {
+		color: @sidebar-link-color-active;
+	}
+	ol {
+		list-style-type: decimal;
+		list-style-position: inside;
+		line-height: 1.8;
+	}
+	h3 {
+		display: inline-block;
+		padding: 10px 20px;
+		border-radius: 6px;
+		font-size: 16px;
+		color: #fff;
+	}
+	.bg-static-rect1 {
+		background-color: rgb(123,197,160);
+	}
+	.bg-static-rect2 {
+		background-color: rgb(142,132,184);
+	}
+	.bg-static-rect3 {
+		background-color: rgb(153,174,107);
+	}
+	.bg-static-rect4 {
+		background-color: rgb(211,165,116);
+	}
+}

@@ -1,0 +1,29 @@
+.main-nav {
+  position: absolute;
+  top: 85px;
+  width: 260px;
+  height: 340px;
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: #bbbbbb -2px 0 2px, #bbbbbb 2px 0 2px;
+}
+.main-nav .menu-title {
+  height: 40px;
+  line-height: 40px;
+  padding: 0 5px;
+  color: #2ea7e0;
+  background-color: #eeeeee;
+  font-size: 18px;
+}
+.main-nav .iconfont {
+  color: #2ea7e0;
+  font-size: 1.5em;
+}
+.main-nav a {
+  margin-right: 15px;
+}
+.main-nav li {
+  padding: 10px 5px;
+}
+.main-nav li + li {
+  border-top: 1px solid #e3e3e3;
+}

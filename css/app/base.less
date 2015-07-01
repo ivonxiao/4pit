@@ -1,0 +1,251 @@
+@charset "utf-8";
+@import "variable.less";
+/*引入字体图标样式*/
+@import (css) "../iconfont.css";
+/*基础样式*/
+body {
+	font: 14px 'Microsoft Yahei', STSong, sans-serif;
+	background-color: @bg-body;
+	min-width: @fix-width;
+}
+.fixed-width {
+	width: @fix-width;
+	margin-left:auto;
+	margin-right: auto;
+}
+.inline-block {
+	display: inline-block;
+}
+.bold {
+	font-weight: 700;
+}
+ul,ol {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+.center-block() {
+	margin-left: auto;
+	margin-right: auto;
+}
+.text-overflow {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.common-link {
+	color: #428BCA;
+}
+a{
+	color: @link-color;
+}
+a:hover {
+	color: @link-hover-color;
+}
+
+.my-mark {
+	color: #f53b3c;
+}
+img {
+	max-width: 100%;
+}
+
+
+/*头部导航*/
+.outer-wrapper-all {
+	position: relative;
+	width: @fix-width;
+	.center-block;
+}
+header {
+	height: 30px;
+	line-height: 30px;
+	background-color: @bg-header;
+	li + li {
+		&:before {
+			content: '|';
+			display: inline-block;
+			margin-right: 5px;
+			color: @link-color;
+		}
+	}
+	
+}
+.header-nav {
+	z-index: 1;
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	background-color: @bg-hd-nav;
+	&.top-hover {
+		position: fixed;
+		top: 0;
+		opacity: 0.7;
+	}
+	ul {
+		float: right;
+		margin: 0;
+	}
+	li {
+		float: left;
+		position: relative;
+		padding: 0 15px;
+		a:after {
+			display: none;
+			content: '';
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			background-color: @hd-nav-border;
+			height: 3px;
+			width: 100%;
+		}
+		&.active {
+			background-color: @bg-hd-nav-active;
+			a:after {
+				display: block;
+			}	
+		}
+		&:hover {
+			background-color: @bg-hd-nav-hover;
+			a:after {
+				display: block;
+			}
+		}
+	}
+	a {
+		display: block;
+		color: @nav-color;
+	}
+	a:hover {
+		text-decoration: none;
+	}
+}
+.logo-tab-item {
+	.header-tab-logo {
+		display: block;
+		width: 110px;
+		height: 60px;
+		background: url("@{imgURL}/logo.gif") no-repeat;
+	}
+}
+
+/*左菜单*/
+.content-wrapper {
+	@sidebar-width: 280px;
+	background-color: @bg-content;
+	section {
+		float: left;
+		width: @sidebar-width;
+		padding-top: 30px;
+		li {
+			height: 40px;
+			line-height: 40px;
+			margin-bottom: 10px;
+			padding-left: 15px;
+			transition: padding ease 0.3s;
+			&.active {
+				background-color: #fff;
+				position: relative;
+				right: -1px;
+				a {
+					color: @sidebar-link-color-active;
+				}
+			}
+			&:hover {
+				background-color: @bg-sidebar-nav-hover;
+				padding-left: 20px;
+			}
+		}
+		a {
+			display: block;
+			color: #333;
+		}
+	}
+	.main-content {
+		float: left;
+		width: e("calc(100% - @{sidebar-width})");
+		min-height: 200px;
+		border-left: 1px solid #e3e3e3;
+		background-color: #fff;
+		padding: 0 15px 50px 30px;
+	}
+	.content-title {
+		@padding-width: 9.5px;
+		position: relative;
+		font-size: 18px;
+		padding: @padding-width;
+		border-bottom: 1px solid @border-color;
+		&:before {
+			content: '';
+			position: absolute;
+			left: -@padding-width;
+			bottom: 0;
+			background-color: @highlight-color;
+			width: 6em;
+			height: 3px;
+		}
+	}
+}
+/*底部*/
+footer {
+	padding: 30px 0 15px;
+	border-top: 1px dashed @border-color;
+	text-align: center;
+	.fpx-logo-link {
+		display: inline-block;
+		width: 114px;
+		height: 36px;
+		background: url("@{imgURL}/footer_logo.gif");
+	}
+	.copyright-wrapper {
+		display: inline-block;
+		a {
+			color: @text-color;
+		}
+	}
+	.btn-region {
+		display: inline-block;
+		margin-top: 15px;
+	}
+}
+.region-flag {
+	width: 16px;
+}
+.advantage-desc-list {
+	text-align: center;
+	padding: 15px 0;
+	background-color: #fff;
+	border-top: 1px solid @border-color;
+	li {
+		display: inline-block;
+		padding: 30px 15px 0 92px;
+		height: 92px;
+		text-align: left;
+		width: 280px;
+		div {
+			padding-left: 15px;
+		}
+	}
+	.advantage-desc-advatage1 {	
+		background: url("@{imgURL}/advantage1.gif") no-repeat;
+	}
+	.advantage-desc-advatage2 {	
+		background: url("@{imgURL}/advantage2.gif") no-repeat;
+	}
+	.advantage-desc-advatage3 {	
+		background: url("@{imgURL}/advantage3.gif") no-repeat;
+	}
+	.advantage-desc-advatage4 {	
+		background: url("@{imgURL}/advantage4.gif") no-repeat;
+	}
+}
+
+/*重置flexslider样式*/
+.flexslider {
+	margin: 0;
+	border: none;
+}
+.flex-control-nav {
+	bottom: 10px;
+}
