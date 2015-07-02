@@ -10,7 +10,6 @@
 	<link rel="stylesheet" href="../css/flexslider/flexslider.css">
 	<link rel="stylesheet" href="../css/app/base.css">
 	<link rel="stylesheet" href="../css/app/news.css">
-	<link rel="stylesheet" href="../css/app/aboutus.css">
 	<script src="../js/jquery/jquery-2.1.1.min.js"></script>
 	<script src="../js/flexslider/jquery.flexslider-min.js"></script>
 	<script src="../js/app/service.js"></script>
@@ -44,13 +43,13 @@
 					<a href="service.html">服务中心</a>
 				</li>
 				<li>
-					<a href="">方案中心</a>
-				</li>
-				<li>
-					<a href="">资讯中心</a>
+					<a href="consumer.case.html">方案中心</a>
 				</li>
 				<li class="active">
-					<a href="">关于我们</a>
+					<a href="#">资讯中心</a>
+				</li>
+				<li>
+					<a href="aboutus.html">关于我们</a>
 				</li>
 			</ul>
 		</div>
@@ -59,7 +58,7 @@
 		<ul class="ads-slides-list slides">
 			<li>
 				<a href="#">
-					<img src="../images/banner.aboutus.jpg" alt="">
+					<img src="../images/banner.news.jpg" alt="">
 				</a>
 			</li>
 		</ul>
@@ -88,9 +87,32 @@
 					</li>
 				</ul>
 			</section>
-			<div class="main-content company-about-content">
+			<div class="main-content news-content">
 				<h2 class="content-title">公司新闻</h2>
-				
+				<div class="content-inner-wrapper">
+					<p class="clearfix news-title">
+						<strong class="col-md-10">主题</strong>
+						<strong class="col-md-2">时间</strong>
+					</p>
+					<ul>
+						<li>
+							<a href="article/1.html" class="col-md-10">三大跨境电商通关服务平台分解</a>
+							<span class="col-md-2">2014-08-21</span>
+						</li>
+						<li>
+							<a href="article/2.html" class="col-md-10">递四方跨境电子通关运营平台助力跨境电商阳光通关</a>
+							<span class="col-md-2">2014-08-12</span>
+						</li>
+						<li>
+							<a href="article/3.html" class="col-md-10">电商供应链及软件服务</a>
+							<span class="col-md-2">2014-07-09</span>
+						</li>
+						<li class="text-center">
+							<a href="javascript:;" class="js-view-more">查看更多新闻</a>
+						</li>
+					</ul>
+				</div>
+
 			</div>
 		</div>
 	</div>
@@ -133,5 +155,29 @@
 			<img src="../images/flags/china.png" alt="中国" class="region-flag">
 		</a>
 	</footer>
+	<script>
+		(function($) {
+			var $newsContainer = $('.news-content');
+			$newsContainer.on('click','a',function() {
+				var $self = $(this);
+				if($self.hasClass('js-view-more')) {
+					return;
+				}
+				else {
+					var url = this.href;
+					var $container = $('.content-inner-wrapper');
+
+					$.ajax(url, {
+						dataType: 'html'
+					})
+					.done(function(res) {
+						$container.html(res);
+					});
+				}
+				return false;
+			});
+
+		})(jQuery);
+	</script>
 </body>
 </html>

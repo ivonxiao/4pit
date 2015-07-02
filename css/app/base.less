@@ -134,15 +134,14 @@ header {
 .content-wrapper {
 	@sidebar-width: 280px;
 	background-color: @bg-content;
+	@pad-w: 15px;
 	section {
 		float: left;
 		width: @sidebar-width;
 		padding-top: 30px;
 		li {
-			height: 40px;
-			line-height: 40px;
-			margin-bottom: 10px;
-			padding-left: 15px;
+			margin-bottom: 5px;
+			padding: 10px 0 10px @pad-w;
 			transition: padding ease 0.3s;
 			&.active {
 				background-color: #fff;
@@ -154,7 +153,30 @@ header {
 			}
 			&:hover {
 				background-color: @bg-sidebar-nav-hover;
-				padding-left: 20px;
+				padding-left: @pad-w+5;
+			}
+			&.submenu {
+				border-top: 1px solid @border-color;
+				font-weight: 700;
+				margin: 0;
+				.submenu-title {
+					padding: 10px 0;
+					display: inline-block;
+				}
+				&:hover {
+					padding-left: @pad-w;
+					background-color: inherit;
+				}
+			}
+			ul {
+				margin-left: -@pad-w;
+				li {
+					padding-left: @pad-w *2;
+					font-weight: normal;
+					&:hover {
+						padding-left: @pad-w *2+5;
+					}
+				}
 			}
 		}
 		a {
@@ -248,4 +270,7 @@ footer {
 }
 .flex-control-nav {
 	bottom: 10px;
+}
+.ads-slides {
+	min-height: 250px;
 }
