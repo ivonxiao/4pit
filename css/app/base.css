@@ -230,7 +230,7 @@ footer .btn-region {
   padding: 30px 15px 0 92px;
   height: 92px;
   text-align: left;
-  width: 280px;
+  width: 240px;
 }
 .advantage-desc-list li div {
   padding-left: 15px;
@@ -256,5 +256,9 @@ footer .btn-region {
   bottom: 10px;
 }
 .ads-slides {
-  min-height: 250px;
+  min-height: 260px;
+}
+.ads-slides .slides img {
+  width: inherit;
+  max-width: inherit;
 }

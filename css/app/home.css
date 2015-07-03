@@ -5,12 +5,12 @@
 body {
   font: 14px 'Microsoft Yahei', STSong, sans-serif;
   background-color: #ffffff;
-  min-width: 1250px;
 }
 .fixed-width {
-  width: 1250px;
+  min-width: 1250px;
   margin-left: auto;
   margin-right: auto;
+  padding: 0 100px;
 }
 .inline-block {
   display: inline-block;
@@ -128,10 +128,8 @@ header li + li:before {
   padding-top: 30px;
 }
 .content-wrapper section li {
-  height: 40px;
-  line-height: 40px;
-  margin-bottom: 10px;
-  padding-left: 15px;
+  margin-bottom: 5px;
+  padding: 10px 0 10px 15px;
   transition: padding ease 0.3s;
 }
 .content-wrapper section li.active {
@@ -145,6 +143,29 @@ header li + li:before {
 .content-wrapper section li:hover {
   background-color: #eaeaea;
   padding-left: 20px;
+}
+.content-wrapper section li.submenu {
+  border-top: 1px solid #e3e3e3;
+  font-weight: 700;
+  margin: 0;
+}
+.content-wrapper section li.submenu .submenu-title {
+  padding: 10px 0;
+  display: inline-block;
+}
+.content-wrapper section li.submenu:hover {
+  padding-left: 15px;
+  background-color: inherit;
+}
+.content-wrapper section li ul {
+  margin-left: -15px;
+}
+.content-wrapper section li ul li {
+  padding-left: 30px;
+  font-weight: normal;
+}
+.content-wrapper section li ul li:hover {
+  padding-left: 35px;
 }
 .content-wrapper section a {
   display: block;
@@ -209,7 +230,7 @@ footer .btn-region {
   padding: 30px 15px 0 92px;
   height: 92px;
   text-align: left;
-  width: 280px;
+  width: 240px;
 }
 .advantage-desc-list li div {
   padding-left: 15px;
@@ -233,6 +254,13 @@ footer .btn-region {
 }
 .flex-control-nav {
   bottom: 10px;
+}
+.ads-slides {
+  min-height: 260px;
+}
+.ads-slides .slides img {
+  width: inherit;
+  max-width: inherit;
 }
 html {
   height: 100%;
