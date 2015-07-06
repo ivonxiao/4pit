@@ -1,0 +1,129 @@
+header {
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+}
+.fp-tooltip {
+  background-color: #54b9cd;
+  padding: 5px;
+  border-radius: 4px;
+}
+.header-nav {
+  position: absolute;
+  top: 30px;
+  left: 0;
+}
+.section {
+  font-size: 18px;
+}
+.section h1 {
+  font-size: 60px;
+  margin: 0;
+}
+.section .fixed-width {
+  width: 1024px;
+  margin: 0 auto;
+}
+.section p {
+  line-height: 1.8;
+  margin: 0 auto;
+}
+.section1-container {
+  color: #fff;
+}
+.section1-container .fixed-width {
+  background: url("../../images/erp/red_01.png") 0 90px, url("../../images/erp/red_02.png") center bottom, url("../../images/erp/red_03.png") right 400px;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+.section1-container h1 {
+  padding-top: 300px;
+  text-align: center;
+}
+.section1-container p {
+  width: 680px;
+}
+.section2-container {
+  color: #da9a5d;
+}
+.section2-container .fixed-width {
+  background: url("../../images/erp/Orange_05.png") left center, url("../../images/erp/Orange_04.png") center bottom, url("../../images/erp/Orange_01.png") right 90px;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+.section2-container h1 {
+  padding-top: 260px;
+}
+.section2-container .content {
+  background: url("../../images/erp/Orange_03.png") right bottom, url("../../images/erp/Orange_02.png") left;
+  background-repeat: no-repeat;
+  width: 650px;
+  padding: 0 200px 30px 30px;
+  float: right;
+}
+.section3-container {
+  color: #b4b41e;
+}
+.section3-container .fixed-width {
+  background: url("../../images/erp/Yellow_05.png") right center, url("../../images/erp/Yellow_04.png") right bottom, url("../../images/erp/Yellow_01.png") left 90px;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+.section3-container h1 {
+  padding-top: 300px;
+}
+.section3-container .content {
+  background: url("../../images/erp/Yellow_03.png") center bottom, url("../../images/erp/Yellow_02.png") right;
+  background-repeat: no-repeat;
+  width: 550px;
+  padding: 30px 0 100px 80px;
+}
+.section4-container {
+  color: #64c9c5;
+}
+.section4-container .fixed-width {
+  background: url("../../images/erp/cyanblue_04.png") left center, url("../../images/erp/cyanblue_01.png") right 90px;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+.section4-container h1 {
+  padding-top: 300px;
+}
+.section4-container .content {
+  background: url("../../images/erp/cyanblue_03.png") 500px bottom, url("../../images/erp/cyanblue_02.png") 450px 140px;
+  background-repeat: no-repeat;
+  padding-left: 450px;
+  padding-bottom: 230px;
+}
+.section5-container {
+  color: #035022;
+}
+.section5-container .fixed-width {
+  background: url("../../images/erp/Green_01.png") left 90px, url("../../images/erp/Green_04.png") right center;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+.section5-container h1 {
+  padding-top: 300px;
+}
+.section5-container .content {
+  background: url("../../images/erp/Green_03.png") 500px bottom, url("../../images/erp/Green_02.png") 400px 480px;
+  background-repeat: no-repeat;
+  padding-right: 450px;
+  padding-bottom: 230px;
+}
+.section6-container {
+  color: #6a93b3;
+}
+.section6-container .fixed-width {
+  background: url("../../images/erp/blue_03.png") left center, url("../../images/erp/blue_02.png") right bottom, url("../../images/erp/blue_01.png") right 90px;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+.section6-container h1 {
+  padding-top: 450px;
+}
+.section6-container .content {
+  float: right;
+  width: 500px;
+}
