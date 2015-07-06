@@ -44,7 +44,7 @@ header {
   width: 680px;
 }
 .section2-container {
-  color: #da9a5d;
+  color: #ad5a0d;
 }
 .section2-container .fixed-width {
   background: url("../../images/erp/Orange_05.png") left center, url("../../images/erp/Orange_04.png") center bottom, url("../../images/erp/Orange_01.png") right 90px;
@@ -62,7 +62,7 @@ header {
   float: right;
 }
 .section3-container {
-  color: #b4b41e;
+  color: #b9b109;
 }
 .section3-container .fixed-width {
   background: url("../../images/erp/Yellow_05.png") right center, url("../../images/erp/Yellow_04.png") right bottom, url("../../images/erp/Yellow_01.png") left 90px;
@@ -79,7 +79,7 @@ header {
   padding: 30px 0 100px 80px;
 }
 .section4-container {
-  color: #64c9c5;
+  color: #009e96;
 }
 .section4-container .fixed-width {
   background: url("../../images/erp/cyanblue_04.png") left center, url("../../images/erp/cyanblue_01.png") right 90px;
@@ -96,7 +96,7 @@ header {
   padding-bottom: 230px;
 }
 .section5-container {
-  color: #035022;
+  color: #097c25;
 }
 .section5-container .fixed-width {
   background: url("../../images/erp/Green_01.png") left 90px, url("../../images/erp/Green_04.png") right center;
@@ -113,7 +113,7 @@ header {
   padding-bottom: 230px;
 }
 .section6-container {
-  color: #6a93b3;
+  color: #0d3a5c;
 }
 .section6-container .fixed-width {
   background: url("../../images/erp/blue_03.png") left center, url("../../images/erp/blue_02.png") right bottom, url("../../images/erp/blue_01.png") right 90px;
