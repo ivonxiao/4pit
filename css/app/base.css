@@ -138,7 +138,7 @@ header li + li:before {
   right: -1px;
 }
 .content-wrapper section li.active a {
-  color: #0e65b4;
+  color: #2ea7e0;
 }
 .content-wrapper section li:hover {
   background-color: #eaeaea;
@@ -169,7 +169,7 @@ header li + li:before {
 }
 .content-wrapper section a {
   display: block;
-  color: #333;
+  color: #818181;
 }
 .content-wrapper .main-content {
   float: left;
@@ -199,6 +199,8 @@ footer {
   padding: 30px 0 15px;
   border-top: 1px dashed #e3e3e3;
   text-align: center;
+  font-size: 12px;
+  color: #898989;
 }
 footer .fpx-logo-link {
   display: inline-block;
@@ -210,7 +212,7 @@ footer .copyright-wrapper {
   display: inline-block;
 }
 footer .copyright-wrapper a {
-  color: #333333;
+  color: #898989;
 }
 footer .btn-region {
   display: inline-block;
@@ -256,9 +258,10 @@ footer .btn-region {
   bottom: 10px;
 }
 .ads-slides {
-  min-height: 260px;
+  height: 350px;
 }
 .ads-slides .slides img {
   width: inherit;
   max-width: inherit;
+  height: 100%;
 }

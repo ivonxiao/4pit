@@ -19,6 +19,7 @@ header {
 .section h1 {
   font-size: 60px;
   margin: 0;
+  margin-bottom: 15px;
 }
 .section .fixed-width {
   width: 1024px;
@@ -36,9 +37,30 @@ header {
   background-repeat: no-repeat;
   height: 100%;
 }
-.section1-container h1 {
+.section1-container .h1-wrapper {
+  position: relative;
   padding-top: 300px;
+  width: 6em;
+  font-size: 60px;
+  margin: auto;
+}
+.section1-container h1 {
+  width: 100%;
+  height: 0.8em;
+  border: 1px solid currentColor;
+  border-radius: 6px;
   text-align: center;
+  position: relative;
+}
+.section1-container h1:after {
+  content: attr(data-title);
+  position: absolute;
+  width: 4.5em;
+  left: 0;
+  right: 0;
+  top: -0.5em;
+  margin: auto;
+  background-color: #f04847;
 }
 .section1-container p {
   width: 680px;

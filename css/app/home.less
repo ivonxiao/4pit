@@ -1,16 +1,17 @@
 @import (less) 'variable.less';
 @import (less) 'base.less'; 
-@bg-header: rgb(30,34,46);
+/* @bg-header: rgb(30,34,46);
 @bg-hd-nav: rgb(35,37,39);
-@bg-hd-nav-hover: rgb(27,31,43);
+@bg-hd-nav-hover: rgb(27,31,43); */
 @bg-sidemenu: rgb(38,38,38);
 @bg-sidemenu-hover: rgb(43,167,227);
 html {
 	height: 100%;
+	background: url("@{imgURL}/home/index_bg2.jpg") rgb(47,49,61);
 }
 body {
 	height: 100%;
-	background: url("@{imgURL}/home/index_bg.jpg") rgb(47,49,61);
+	background-color: rgba(30,30,30,0.6);
 	overflow-y: hidden;
 }
 header,nav {
@@ -25,7 +26,9 @@ header,nav {
 	}
 }
 .eco-system-container {
-
+	a {
+		color: #fff;
+	}
 	.loop1(3);
 	.loop1(@n,@i: 1) when (@i <= @n) {
 		.consumer-list li:nth-child(@{i}) {
@@ -238,15 +241,13 @@ header,nav {
 		}
 	}
 }
-footer {
+ footer {
 	border: none;
 	position: fixed;
 	width: 100%;
 	bottom: 0;
 	color: #ccc;
-	>div {
-		display: inline-block;
-		vertical-align: middle;
-		text-align: left;
+	.copyright-wrapper a {
+		color: #ccc;
 	}
-}
+} 

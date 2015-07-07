@@ -3,7 +3,6 @@ $(function() {
 		directionNav: false,
 		animation: 'slide'
 	});
-
 	var showHeaderNavAlways = function () {
 		var scrollTop = $(window).scrollTop(),
 			$nav = $('.header-nav');

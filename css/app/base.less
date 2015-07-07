@@ -181,7 +181,7 @@ header {
 		}
 		a {
 			display: block;
-			color: #333;
+			color: #818181;
 		}
 	}
 	.main-content {
@@ -211,9 +211,12 @@ header {
 }
 /*底部*/
 footer {
+	@color: #898989;
 	padding: 30px 0 15px;
 	border-top: 1px dashed @border-color;
 	text-align: center;
+	font-size: 12px;
+	color: @color;
 	.fpx-logo-link {
 		display: inline-block;
 		width: 114px;
@@ -223,7 +226,7 @@ footer {
 	.copyright-wrapper {
 		display: inline-block;
 		a {
-			color: @text-color;
+			color: @color;
 		}
 	}
 	.btn-region {
@@ -272,11 +275,12 @@ footer {
 	bottom: 10px;
 }
 .ads-slides {
-	min-height: 260px;
+	height: 350px;
 	.slides {
 		img {	
 			width: inherit;
 			max-width: inherit;
+			height: 100%;
 		}
 	}
 }
