@@ -190,7 +190,7 @@ header li + li:before {
   position: absolute;
   left: -9.5px;
   bottom: 0;
-  background-color: #0e65b4;
+  background-color: #2ea7e0;
   width: 6em;
   height: 3px;
 }
