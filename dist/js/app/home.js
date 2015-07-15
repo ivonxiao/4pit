@@ -1,0 +1,1 @@
+$(function(){$(".sidemenu-container").on("click",".close",function(){$(this).parents(".sidemenu-content-wrapper").hide()}).on("click",".sidemenu-contact",function(){var n=$(this).parents(".sidemenu-item"),e=n.find(".sidemenu-content-wrapper");e.show()})});

@@ -1,0 +1,30 @@
+@import (less) 'variable.less';
+.main-nav {
+	position: absolute;
+	top: 85px;
+	width: 260px;
+	height: 360px;
+	background: rgba(255,255,255,0.96);
+	box-shadow: #bbb -2px 0 2px,#bbb 2px 0 2px;
+	.menu-title {
+		height: @menu-title-height;
+		line-height: @menu-title-height;
+		padding:0 5px;
+		color: @menu-color;
+		background-color: @gray;
+		font-size: @menu-title-fontsize;
+	}
+	.iconfont {
+		color: @menu-color;
+		font-size: 1.5em;
+	}
+	a {
+		margin-right: 15px;
+	}
+	li {
+		padding: 10px 5px;
+		& + li {
+			border-top: 1px solid @border-color;
+		}
+	}
+}

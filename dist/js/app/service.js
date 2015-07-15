@@ -1,0 +1,1 @@
+$(function(){$(".flexslider").flexslider({directionNav:!1,animation:"slide"})});
