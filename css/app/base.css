@@ -1,5 +1,5 @@
 @charset "utf-8";
-@import "../iconfont.css";
+@import url("../iconfont.css");
 /*引入字体图标样式*/
 /*基础样式*/
 html {
