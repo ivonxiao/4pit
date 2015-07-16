@@ -362,8 +362,5 @@ body {
   overflow: hidden;
 }
 footer {
-  color: #fff;
-}
-footer a {
-  color: inherit;
+  margin: 0;
 }
