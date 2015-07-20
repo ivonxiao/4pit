@@ -56,20 +56,24 @@ img {
 header {
   height: 30px;
   line-height: 30px;
-  background-color: #ededed;
+  background-color: #f9f9f9;
+}
+header a {
+  color: #898989;
 }
 header li + li:before {
   content: '|';
   display: inline-block;
   margin-right: 5px;
-  color: #333333;
+  color: #898989;
 }
 .header-nav {
   z-index: 1;
   width: 100%;
-  height: 60px;
   line-height: 60px;
   background-color: #f7f7f7;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
 }
 .header-nav.top-hover {
   position: fixed;
@@ -109,7 +113,7 @@ header li + li:before {
   position: absolute;
   left: 0;
   bottom: 0;
-  background-color: #92c423;
+  background-color: #2ea7e0;
   height: 3px;
   width: 100%;
 }
@@ -162,11 +166,14 @@ header li + li:before {
   margin-bottom: 5px;
   padding: 10px 0 10px 15px;
   transition: padding ease 0.3s;
+  border-top: 1px solid transparent;
 }
 .content-wrapper section li.active {
   background-color: #fff;
   position: relative;
   right: -1px;
+  border: 1px solid #e3e3e3;
+  border-right: none;
 }
 .content-wrapper section li.active a {
   color: #2ea7e0;
@@ -174,6 +181,7 @@ header li + li:before {
 .content-wrapper section li:hover {
   background-color: #eaeaea;
   padding-left: 20px;
+  border-top: 1px solid #e3e3e3;
 }
 .content-wrapper section li.submenu {
   border-top: 1px solid #e3e3e3;
