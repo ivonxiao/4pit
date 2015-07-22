@@ -8,6 +8,7 @@ html {
 body {
   font-family: 'Microsoft Yahei', STSong, sans-serif;
   background-color: #ffffff;
+  -ms-overflow-style: scrollbar;
 }
 .fixed-width {
   width: 1250px;
