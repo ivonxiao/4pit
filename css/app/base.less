@@ -83,6 +83,7 @@ header {
 	background-color: @bg-hd-nav;
 	border-top: 1px solid #e5e5e5;
 	border-bottom: 1px solid #e5e5e5;
+	font-size: 16px;
 	&.top-hover {
 		position: fixed;
 		top: 0;
@@ -103,6 +104,7 @@ header {
 		padding: 15px;
 		background-color: @bg-subnav;
 		transition: visibility 0.1s ease-in-out;
+		font-size: 14px;
 		a {
 			padding: 0;
 			margin-right: 30px;
@@ -227,6 +229,9 @@ header {
 		a {
 			display: block;
 			color: #818181;
+			&:hover {
+				text-decoration: none;
+			}
 		}
 	}
 	.main-content {
@@ -258,7 +263,7 @@ header {
 footer {
 	color: #fff;
 	background-color: @bg-footer;
-	margin-top: 50px;
+	
 	padding: 10px 0;
 	font-size: 0.85rem;
 	a {
