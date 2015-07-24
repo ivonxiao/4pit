@@ -98,12 +98,23 @@ header {
 	}
 	.subnav {
 		position: absolute;
+		left: 0;
+		right: 0;
+		padding: 15px;
+		@media (min-width: 768px) {
+			padding: 15px calc(~"(100% - 750px)/2");
+		}
+		@media (min-width: 992px) {
+			padding: 15px calc(~"(100% - 970px)/2");
+		}
+		@media (min-width: 1200px) {
+			padding: 15px calc(~"(100% - 1170px)/2");
+		}
+		width: 100%;
 		z-index: 1;
 		line-height: 2;
 		float: left;
 		visibility: hidden;
-		width: 450px;
-		padding: 15px;
 		background-color: @bg-subnav;
 		transition: visibility 0.1s ease-in-out;
 		font-size: 14px;
@@ -120,16 +131,6 @@ header {
 		}
 	}
 	li {
-		&:after {
-			display: none;
-			content: '';
-			position: absolute;
-			left: 0;
-			bottom: 0;
-			background-color: @hd-nav-border;
-			height: 3px;
-			width: 100%;
-		}
 		&.website-logo{
 			&:after {
 				content: none;
@@ -140,8 +141,10 @@ header {
 		}
 		&:hover,
 		&.active {
-			&:after {
-				display: block;
+			.nav-title {
+				&:after {
+					display: block;
+				}
 			}
 			background-color: @bg-hd-nav-hover;
 		}
@@ -154,13 +157,22 @@ header {
 	}
 	li {
 		float: left;
-		position: relative;
 	}
 	a,
 	.nav-title {
 		display: block;
 		padding: 0 15px;
-		
+		position: relative;
+		&:after {
+			display: none;
+			content: '';
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			background-color: @hd-nav-border;
+			height: 3px;
+			width: 100%;
+		}
 	}
 	a:hover {
 		text-decoration: none;
