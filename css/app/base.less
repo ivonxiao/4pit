@@ -1,5 +1,6 @@
 @charset "utf-8";
 @import "variable.less";
+@import "mixin/global.less";
 /*引入字体图标样式*/
 @import (css) url("../iconfont.css");
 /*基础样式*/
@@ -332,7 +333,7 @@ footer {
 	top: 50%;
 	right: 0;
 	background-color: @bg-sidemenu;
-	transform: translate(0,-50%);
+	.transform-mixin(translate(0,-50%));
 	transition: all .3s;
 	&:hover {
 		width: @contact-icon-w + 200;
