@@ -93,30 +93,34 @@ header {
 	}
 	.nav-group-title {
 		font-size: 1rem;
+		text-align: left;
 		margin-top: 0;
 		color: @highlight-color;
 	}
-	.subnav {
+	.subnav-wrapper {
 		position: absolute;
 		left: 0;
 		right: 0;
-		padding: 15px;
-		@media (min-width: 768px) {
-			padding: 15px calc(~"(100% - 750px)/2");
-		}
-		@media (min-width: 992px) {
-			padding: 15px calc(~"(100% - 970px)/2");
-		}
-		@media (min-width: 1200px) {
-			padding: 15px calc(~"(100% - 1170px)/2");
-		}
+		background-color: @bg-subnav;
 		width: 100%;
 		z-index: 1;
-		line-height: 2;
-		float: left;
 		visibility: hidden;
-		background-color: @bg-subnav;
 		transition: visibility 0.1s ease-in-out;
+	}
+	.subnav {
+		margin: auto;
+		padding: 30px;
+		@media (min-width: 768px) {
+			width: 750px;
+		}
+		@media (min-width: 992px) {
+			width: 970px;
+		}
+		@media (min-width: 1200px) {
+			width: 1170px;
+		}
+		
+		line-height: 2;
 		font-size: 14px;
 		a {
 			padding: 0;
@@ -128,6 +132,11 @@ header {
 			&:after {
 				content:none;
 			}
+		}
+		&:after {
+			content: '';
+			display: table;
+			clear: both;
 		}
 	}
 	li {
@@ -149,7 +158,7 @@ header {
 			background-color: @bg-hd-nav-hover;
 		}
 		&:hover {
-			.subnav {
+			.subnav-wrapper {
 				visibility: visible;
 				transition: visibility 0.1s ease-in-out;
 			}
@@ -340,6 +349,7 @@ footer {
 	@contact-icon-w: 35px;
 	@bg-sidemenu: @bg-footer;
 	position: fixed;
+	z-index: 1;
 	width: @contact-icon-w;
 	height: 10em;
 	top: 50%;

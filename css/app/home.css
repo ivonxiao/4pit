@@ -84,31 +84,39 @@ header li + li:before {
 }
 .header-nav .nav-group-title {
   font-size: 1rem;
+  text-align: left;
   margin-top: 0;
   color: #2ea7e0;
 }
-.header-nav .subnav {
+.header-nav .subnav-wrapper {
   position: absolute;
   left: 0;
   right: 0;
-  padding: 15px;
+  background-color: #efefef;
   width: 100%;
   z-index: 1;
-  line-height: 2;
-  float: left;
   visibility: hidden;
-  background-color: #efefef;
   transition: visibility 0.1s ease-in-out;
+}
+.header-nav .subnav {
+  margin: auto;
+  padding: 30px;
+  line-height: 2;
   font-size: 14px;
 }
 @media (min-width: 768px) {
   .header-nav .subnav {
-    padding: 15px calc((100% - 750px)/2);
+    width: 750px;
   }
 }
 @media (min-width: 992px) {
   .header-nav .subnav {
-    padding: 15px calc((100% - 970px)/2);
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .header-nav .subnav {
+    width: 1170px;
   }
 }
 .header-nav .subnav a {
@@ -121,6 +129,11 @@ header li + li:before {
 }
 .header-nav .subnav li:after {
   content: none;
+}
+.header-nav .subnav:after {
+  content: '';
+  display: table;
+  clear: both;
 }
 .header-nav li.website-logo:after {
   content: none;
@@ -136,7 +149,7 @@ header li + li:before {
 .header-nav li.active .nav-title:after {
   display: block;
 }
-.header-nav li:hover .subnav {
+.header-nav li:hover .subnav-wrapper {
   visibility: visible;
   transition: visibility 0.1s ease-in-out;
 }
@@ -312,6 +325,7 @@ footer a {
 /*联系方式*/
 .sidemenu-container {
   position: fixed;
+  z-index: 1;
   width: 35px;
   height: 10em;
   top: 50%;
