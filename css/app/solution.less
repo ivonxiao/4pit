@@ -1,4 +1,8 @@
 @import "variable.less";
+.large-paragraph {
+	font-size: 1.3rem;
+	line-height: 1.8;
+}
 .flexslider {
 	min-height: 400px;
 	img {
@@ -7,8 +11,14 @@
 	li {
 		position: relative;
 	}
+	&.solution2-flexslider {
+		.txt-container {
+			background-color: transparent;
+		}		
+	}
 	.txt-container {
 		position: absolute;
+		padding: 5% 0;
 		width: 100%;
 		height: 100%;
 		background-color: rgba(0,0,0,.35);
@@ -18,7 +28,11 @@
 		text-align: center;
 		font-size: 1.5rem;
 		div {
-			padding: 0 200px;
+			padding: 0 100px;
+			@media (max-width: 1200px) {
+				padding: 0;
+				font-size: 1.2rem;
+			}
 		}
 		.txt-intro {
 			text-indent: 2em;
@@ -93,4 +107,109 @@
 }
 footer {
 	margin-top: 50px;
+}
+.solution2-consumer-value {
+	@w: 210px;
+	.loop(@count) when(@count < 6) {
+		.loop(@count + 1);
+		& when(mod(@count,2) = 1) {
+			li:nth-child(@{count}) {
+				top: 150px;
+				left: 60 + (@count - 1)* @w;
+				@media (max-width: 1200px) {
+					top: 130px;
+					left: 20% * (@count - 1);
+				}
+			}
+		}
+		& when(mod(@count,2) = 0) {
+			li:nth-child(@{count}) {
+				top: 0;
+				left:60 + (@count - 1) *@w ;
+				@media (max-width: 1200px) {
+					left: 20% * (@count - 1) ;
+				}
+			}
+		}
+	}
+	position: relative;
+	margin-bottom: 60px;
+	height: 185px;
+	background: url("../../images/solution2_1.jpg") no-repeat;
+	background-size: contain;
+	li {
+		position: absolute;
+		width: @w;
+	}
+	.loop(1);
+}
+.solution2-value-detail {
+	img {
+		float: left;
+		@media (max-width: 1200px) {
+			width: 60%;
+		}
+	}
+	.large-paragraph {
+		float: left;
+		padding-left: 30px;
+		width: calc(~"100% - 704px");
+		@media (max-width: 1200px) {
+			width: 40%;
+		}
+	}
+}
+.solution2-target-list {
+	text-align: justify;
+	&:after {
+		content: '';
+		display: inline-block;
+		width: 100%;
+	}
+}
+.solution2-tongguan,
+.solution2-shangjian,
+.solution2-jiehui,
+.solution2-suiwu {
+	display: inline-block;
+	text-align: center;
+	font-size: 1.5rem;
+	width: 100px;
+	height: 100px;
+	line-height: 100px;
+	color: #fff;
+	border-radius: 50%;
+}
+.solution2-tongguan {
+	background-color: rgb(244,114,100);
+}
+.solution2-shangjian {
+	background-color: rgb(247,212,96);
+}
+.solution2-jiehui {
+	background-color: rgb(36,205,184);
+}
+.solution2-suiwu {
+	background-color: rgb(142,142,192);
+}
+.solution2-plus {
+	display: inline-block;
+	font-size: 100px;
+	color: #ccc;
+	vertical-align: middle;
+	margin-bottom: 30px;
+}
+.list-num {
+	display: inline-block;
+	width: 30px;
+	height: 25px;
+	text-align: center;
+	line-height: 25px;
+	color: #fff;
+	background-color: rgb(46,167,224);
+	border-bottom-right-radius: 100%;
+	border-bottom-left-radius: 100%;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	margin-bottom: 5px;
 }
