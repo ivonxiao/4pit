@@ -9,9 +9,52 @@ body {
 	overflow: hidden;
 }
 .flexslider {
-	max-height: e('calc(100vh - 150px)');
+	max-height: e('calc(100vh - 160px)');
 	overflow: hidden;
 }
+/*滚动新闻*/
+.home-news-wrapper {
+	height: 40px;
+	overflow: hidden;
+	background-color: #ccc;
+	.newslist-link {
+		display: inline-block;
+		margin-top: 10px;
+		font-size: 1.2rem;
+		&:after {
+			display: inline-block;
+			content: '|';
+			margin: 0 5px;
+		}
+	}
+}
+.home-news-list,
+.news-pager-nav {
+	display: inline-block;
+	vertical-align: top;
+}
+.home-news-list {
+	width: 60%;
+	height: 1em;
+	line-height: 1em;
+	overflow: hidden;
+	margin-top: 15px;
+}
+.news-pager-nav {
+	a {
+		display: block;
+	}
+	.caret {
+		border-width: 8px;
+	}
+	.caret-previous {
+		border-top: 0;
+		border-bottom: 8px solid;
+	}
+}
+
 footer {
-	margin: 0;
+	padding: 0;
+	height: 30px;
+	line-height: 30px;
 }
