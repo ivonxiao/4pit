@@ -135,6 +135,9 @@ header li + li:before {
   display: table;
   clear: both;
 }
+.header-nav li.website-logo {
+  margin-right: 30px;
+}
 .header-nav li.website-logo:after {
   content: none;
 }
