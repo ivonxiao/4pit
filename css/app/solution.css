@@ -1,5 +1,6 @@
+/*字体大小*/
 .large-paragraph {
-  font-size: 1.3rem;
+  font-size: 18.2px;
   line-height: 1.8;
 }
 .flexslider {
@@ -24,7 +25,7 @@
   left: 0;
   color: #fff;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 21px;
 }
 .flexslider .txt-container div {
   padding: 0 100px;
@@ -32,7 +33,7 @@
 @media (max-width: 1200px) {
   .flexslider .txt-container div {
     padding: 0;
-    font-size: 1.2rem;
+    font-size: 16.8px;
   }
 }
 .flexslider .txt-container .txt-intro {
@@ -42,7 +43,7 @@
   text-align: left;
 }
 .flexslider .txt-title {
-  font-size: 2.5rem;
+  font-size: 35px;
   margin: 50px 0;
 }
 .flexslider .txt-small-title {
@@ -53,13 +54,13 @@
 }
 .body-solution h2 {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 21px;
   margin: 30px 0;
 }
 .list1,
 .list2,
 .list3 {
-  font-size: 1.1rem;
+  font-size: 15.4px;
   line-height: 1.8;
 }
 .list1 li {
@@ -69,7 +70,7 @@
   padding: 0 100px;
 }
 .list1 .iconfont {
-  font-size: 3rem;
+  font-size: 42px;
   color: #2ea7e0;
 }
 .list2 li {
@@ -96,7 +97,8 @@
   display: block;
   margin: 5px 0;
 }
-footer {
+.body-solution .footer {
+  position: static;
   margin-top: 50px;
 }
 .solution2-consumer-value {
@@ -190,7 +192,7 @@ footer {
 .solution2-suiwu {
   display: inline-block;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 21px;
   width: 100px;
   height: 100px;
   line-height: 100px;

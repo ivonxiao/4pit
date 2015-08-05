@@ -1,5 +1,6 @@
 @charset "utf-8";
 @import url("../iconfont.css");
+/*字体大小*/
 /*引入字体图标样式*/
 /*基础样式*/
 html {
@@ -54,15 +55,15 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
-header {
+.top-header {
   height: 30px;
   line-height: 30px;
   background-color: #f9f9f9;
 }
-header a {
+.top-header a {
   color: #898989;
 }
-header li + li:before {
+.top-header li + li:before {
   content: '|';
   display: inline-block;
   margin-right: 5px;
@@ -83,7 +84,7 @@ header li + li:before {
   opacity: 0.7;
 }
 .header-nav .nav-group-title {
-  font-size: 1rem;
+  font-size: 14px;
   text-align: left;
   margin-top: 0;
   color: #2ea7e0;
@@ -189,60 +190,60 @@ header li + li:before {
 .content-wrapper {
   background-color: #f4f4f4;
 }
-.content-wrapper section {
+.content-wrapper .left-menu-section {
   float: left;
   width: 280px;
   padding-top: 30px;
 }
-.content-wrapper section li {
+.content-wrapper .left-menu-section li {
   margin-bottom: 5px;
   padding: 10px 0 10px 15px;
   transition: padding ease 0.3s;
   border-top: 1px solid transparent;
 }
-.content-wrapper section li.active {
+.content-wrapper .left-menu-section li.active {
   background-color: #fff;
   position: relative;
   right: -1px;
   border: 1px solid #e3e3e3;
   border-right: none;
 }
-.content-wrapper section li.active a {
+.content-wrapper .left-menu-section li.active a {
   color: #2ea7e0;
 }
-.content-wrapper section li:hover {
+.content-wrapper .left-menu-section li:hover {
   background-color: #eaeaea;
   padding-left: 20px;
   border-top: 1px solid #e3e3e3;
 }
-.content-wrapper section li.submenu {
+.content-wrapper .left-menu-section li.submenu {
   border-top: 1px solid #e3e3e3;
   font-weight: 700;
   margin: 0;
 }
-.content-wrapper section li.submenu .submenu-title {
+.content-wrapper .left-menu-section li.submenu .submenu-title {
   padding: 10px 0;
   display: inline-block;
 }
-.content-wrapper section li.submenu:hover {
+.content-wrapper .left-menu-section li.submenu:hover {
   padding-left: 15px;
   background-color: inherit;
 }
-.content-wrapper section li ul {
+.content-wrapper .left-menu-section li ul {
   margin-left: -15px;
 }
-.content-wrapper section li ul li {
+.content-wrapper .left-menu-section li ul li {
   padding-left: 30px;
   font-weight: normal;
 }
-.content-wrapper section li ul li:hover {
+.content-wrapper .left-menu-section li ul li:hover {
   padding-left: 35px;
 }
-.content-wrapper section a {
+.content-wrapper .left-menu-section a {
   display: block;
   color: #818181;
 }
-.content-wrapper section a:hover {
+.content-wrapper .left-menu-section a:hover {
   text-decoration: none;
 }
 .content-wrapper .main-content {
@@ -269,13 +270,13 @@ header li + li:before {
   height: 3px;
 }
 /*底部*/
-footer {
+.footer {
   color: #fff;
   background-color: #2ea7e0;
   padding: 10px 0;
-  font-size: 0.85rem;
+  font-size: 11.9px;
 }
-footer a {
+.footer a {
   color: inherit;
 }
 .region-flag {
@@ -388,12 +389,6 @@ footer a {
   width: 35px;
   cursor: pointer;
   padding: 15px 0;
-  /* &:hover {
-			.sidemenu-tip {
-				visibility: visible;
-				right: @contact-icon-w;
-			}
-		} */
 }
 html {
   height: 100%;
@@ -410,145 +405,11 @@ nav {
   padding-right: 35px;
 }
 .eco-system-container {
-  margin-top: -90px;
-  padding-top: 90px;
+  background: url("../../images/tuoling.eco.png") center no-repeat;
   height: 100%;
-  /*
-	* provider: 50% + 396/2 + 72 = 270px, 45px = 90/2
-	* erp: 396/3*2 - 72/2 = 228px
-	 */
-  background: url("../../images/home/consumer.png") calc(50% - 264px) calc(50% - 78px), url("../../images/home/provider.png") calc(50% + 270px) calc(50% + 45px), url("../../images/home/erp.png") calc(50% - 228px) calc(50% + 123px);
-  background-repeat: no-repeat;
+  margin-top: -70px;
 }
-.eco-system-container a {
-  color: #fff;
-}
-.eco-system-container .consumer-list li:nth-child( 1) {
-  top: -20px;
-  left: -5em;
-}
-.eco-system-container .consumer-list li:nth-child( 2) {
-  top: 0px;
-  left: -5.5em;
-}
-.eco-system-container .consumer-list li:nth-child( 3) {
-  top: 20px;
-  left: -6em;
-}
-.eco-system-container .provider-list li:nth-child( 1) {
-  left: -1.5em;
-}
-.eco-system-container .provider-list li:nth-child( 2) {
-  left: 0em;
-}
-.eco-system-container .provider-list li:nth-child( 3) {
-  left: 0em;
-}
-.eco-system-container .provider-list li:nth-child( 4) {
-  left: -1em;
-}
-.eco-system-container .provider-list li:nth-child( 5) {
-  left: -2em;
-}
-.eco-system-container .eco-system-img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.eco-system-container .consumer-list {
-  counter-reset: consumer;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  margin-left: -400px;
-  margin-top: -90px;
-}
-.eco-system-container .consumer-list li {
-  position: absolute;
-  width: 200px;
-  height: 30px;
-}
-.eco-system-container .consumer-list li:after {
-  counter-increment: consumer;
-  content: counter(consumer);
-  border-radius: 50%;
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  line-height: 16px;
-  text-align: center;
-  background-color: #5ec5cc;
-  color: #fff;
-}
-.eco-system-container .provider-list {
-  counter-reset: provider;
-  position: absolute;
-  right: 50%;
-  top: 50%;
-  margin-right: -500px;
-  margin-top: -20px;
-}
-.eco-system-container .provider-list li {
-  position: relative;
-  height: 30px;
-}
-.eco-system-container .provider-list li:before {
-  counter-increment: provider;
-  content: counter(provider);
-  border-radius: 50%;
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  line-height: 16px;
-  text-align: center;
-  background-color: #8ec641;
-  color: #fff;
-}
-.eco-system-container .erp-list {
-  counter-reset: erp;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 200px;
-  margin-left: -400px;
-  margin-top: 95px;
-}
-.eco-system-container .eco-item-default,
-.eco-system-container .eco-item-consumer,
-.eco-system-container .eco-item-provider,
-.eco-system-container .eco-item-erp {
-  font-size: 1.3em;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-}
-.eco-system-container .eco-item-consumer {
-  color: #5ec5cc;
-  margin-left: -100px;
-  margin-top: -120px;
-}
-.eco-system-container .eco-item-consumer .iconfont {
-  font-size: 1.5em;
-}
-.eco-system-container .eco-item-provider {
-  color: #8ec641;
-  margin-left: 100px;
-  margin-top: -10px;
-}
-.eco-system-container .eco-item-provider .iconfont {
-  display: block;
-  font-size: 1.5em;
-}
-.eco-system-container .eco-item-erp {
-  color: #f5921d;
-  margin-left: -80px;
-  margin-top: 90px;
-}
-.eco-system-container .eco-item-erp .iconfont {
-  font-size: 1.5em;
-}
-footer {
+.footer {
   border: none;
   position: fixed;
   width: 100%;

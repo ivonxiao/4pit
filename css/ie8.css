@@ -1,0 +1,69 @@
+.home-news-wrapper,
+#index_body .footer {
+	position: fixed;
+	width: 100%;
+	left: 0;
+}
+.home-news-wrapper {
+	bottom: 30px;
+}
+.footer {
+	bottom: 0;
+}
+/*在线联系*/
+.sidemenu-container:hover {
+	margin-top: -225px;
+}
+/*左菜单*/
+.content-wrapper .container {
+	position: relative;
+}
+.content-wrapper .left-menu-section {
+	position: absolute;
+	height: 100%;
+	background-color: #f4f4f4;
+}
+.content-wrapper .main-content {
+	padding-left: 300px;
+	width: 100%;
+}
+/*跨境电商公共服务解决方案*/
+.solution2-consumer-value .ie8-item1 {
+	top: 150px;
+    left: 60px;
+}
+.solution2-consumer-value .ie8-item2 {
+	top: 0;
+    left: 270px;
+}
+.solution2-consumer-value .ie8-item3 {
+	top: 150px;
+    left: 480px;
+}
+.solution2-consumer-value .ie8-item4 {
+	top: 0;
+    left: 690px;
+}
+.solution2-consumer-value .ie8-item5 {
+	top: 150px;
+    left: 900px;
+}
+@media (min-width: 1200px) {
+	.solution2-value-detail {
+		margin-bottom: 150px;
+	}
+}
+.solution2-value-detail img {
+	position: absolute;
+}
+.solution2-value-detail .large-paragraph {
+	width: 100% !important;
+	padding-left: 734px;
+}
+/*驼灵生态图*/
+#tuoling_root {
+	background: url("../images/home/index_bg.jpg") rgb(47,49,61); 
+}
+#tuoling_root body {
+	background-color: transparent;
+}

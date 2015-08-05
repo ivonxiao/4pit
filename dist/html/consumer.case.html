@@ -8,14 +8,19 @@
 	<meta name="renderer" content="ie-stand">
 	<link rel="stylesheet" href="http://ivonxiao.github.io/4pit/dist/css/bootstrap/bootstrap.min_9b69a9b.css">
 	<link rel="stylesheet" href="http://ivonxiao.github.io/4pit/dist/css/flexslider/flexslider_4f24c39.css">
-	<link rel="stylesheet" href="http://ivonxiao.github.io/4pit/dist/css/app/base_b1f4268.css">
+	<link rel="stylesheet" href="http://ivonxiao.github.io/4pit/dist/css/app/base_aac415f.css">
 	<link rel="stylesheet" href="http://ivonxiao.github.io/4pit/dist/css/app/news_5702106.css">
-	<script src="http://ivonxiao.github.io/4pit/dist/js/jquery/jquery-2.1.1.min_aa7f2b3.js"></script>
+	<!-- Respond.js for IE8 support of media queries -->
+<!--[if lt IE 9]>
+  	<link rel="stylesheet" href="http://ivonxiao.github.io/4pit/dist/css/ie8_ef2ea52.css">
+	<script src="http://ivonxiao.github.io/4pit/dist/js/bootstrap/respond.min_c798fc9.js"></script>
+<![endif]-->
+	<script src="http://ivonxiao.github.io/4pit/dist/js/jquery/jquery-1.11.3.min_6163309.js"></script>
 	<script src="http://ivonxiao.github.io/4pit/dist/js/flexslider/jquery.flexslider-min_97fb1f2.js"></script>
 	<script src="http://ivonxiao.github.io/4pit/dist/js/app/service_6f85c80.js"></script>
 </head>
 <body>
-	<header class="text-right">
+	<div class="text-right top-header">
 	<div class="container">
 		<ul class="list-inline">
 			<li>
@@ -29,8 +34,8 @@
 			</li>
 		</ul>
 	</div>
-</header>
-<nav class="header-nav">
+</div>
+<div class="header-nav">
 	<div class="container">
 		<ul>
 			<li class="website-logo">
@@ -128,7 +133,7 @@
 			</li> 
 		</ul>
 	</div>
-</nav>
+</div>
 	<div class="ads-slides flexslider">
 		<ul class="ads-slides-list slides">
 			<li>
@@ -145,7 +150,7 @@
 	</div>
 	<div class="content-wrapper clearfix">
 		<div class="fixed-width">
-			<section>
+			<div class="left-menu-section">
 				<ul>
 					<li class="submenu">
 						<span class="iconfont icon-book"></span>
@@ -178,7 +183,7 @@
 						</ul>
 					</li>
 				</ul>
-			</section>
+			</div>
 			<div class="main-content client-case-content">
 				<h2 class="content-title">海外仓系统</h2>
 				<div class="content-inner-wrapper">
@@ -213,7 +218,7 @@
 			</div>
 		</li>
 	</ul>
-	<aside class="sidemenu-container">
+	<div class="sidemenu-container">
 	<div class="sidemenu-contact">
 		<span class="iconfont icon-kefubu"></span>
 		<div class="sidemenu-tip">
@@ -292,10 +297,10 @@
 			</li>
 		</ul>
 	</div>
-</aside>
-	<footer class="text-center">
+</div>
+	<div class="text-center footer">
 	&copy;2015 <a href="http://www.4px.com/" target="_blank">4PX Network Technology Ltd Inc</a>深圳市前海四方网络科技有限公司版权所有
-</footer>
+</div>
 	<script>
 		(function($) {
 			var $newsContainer = $('.content-wrapper');

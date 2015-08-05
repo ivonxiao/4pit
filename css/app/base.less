@@ -5,7 +5,7 @@
 @import (css) url("../iconfont.css");
 /*基础样式*/
 html {
-	font-size: 14px;
+	font-size: @base-fontsize;
 }
 body {
 	font-family:'Microsoft Yahei', STSong, sans-serif;
@@ -61,7 +61,7 @@ img {
 	width: @fix-width;
 	.center-block;
 }
-header {
+.top-header {
 	height: 30px;
 	line-height: 30px;
 	background-color: @bg-header;
@@ -92,7 +92,7 @@ header {
 		opacity: 0.7;
 	}
 	.nav-group-title {
-		font-size: 1rem;
+		font-size: @base-fontsize;
 		text-align: left;
 		margin-top: 0;
 		color: @highlight-color;
@@ -202,7 +202,7 @@ header {
 	@sidebar-width: 280px;
 	background-color: @bg-content;
 	@pad-w: 15px;
-	section {
+	.left-menu-section {
 		float: left;
 		width: @sidebar-width;
 		padding-top: 30px;
@@ -284,12 +284,12 @@ header {
 	}
 }
 /*底部*/
-footer {
+.footer {
 	color: #fff;
 	background-color: @bg-footer;
 	
 	padding: 10px 0;
-	font-size: 0.85rem;
+	font-size: 0.85 * @base-fontsize;
 	a {
 		color: inherit;
 	}
@@ -405,11 +405,5 @@ footer {
 		width: @contact-icon-w;
 		cursor: pointer;
 		padding: 15px 0;
-		/* &:hover {
-			.sidemenu-tip {
-				visibility: visible;
-				right: @contact-icon-w;
-			}
-		} */
 	}
 }
