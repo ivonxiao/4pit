@@ -19,8 +19,8 @@ function fullpageShow(bgcolors,tooltips,target) {
 }
 $(function() {
 	var navObj = {
-		bgColors: ['rgb(240,72,71)', 'rgb(250,200,139)', 'rgb(253,255,190)', 'rgb(151,255,248)', 'rgb(109,253,156)', 'rgb(161,206,239)'],
-		tooltips: ['电商ERP', '品类管理', '供应链管理', '订单管理', '平台监控', '账务中心']
+		bgColors: ['rgb(240,72,71)', 'rgb(250,200,139)', 'rgb(253,255,190)', 'rgb(151,255,248)', 'rgb(109,253,156)'],
+		tooltips: ['电商仓储配送系统', '系统集成服务总线', '流程管控，灵活可配', '多组织多架构权限管理模型', '基于互联网，B/S和C/S混合模式']
 	};
 	fullpageShow(navObj.bgColors,navObj.tooltips,$('#fullpage'));
 });

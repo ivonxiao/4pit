@@ -407,6 +407,9 @@ body {
   max-height: calc(100vh - 160px);
   overflow: hidden;
 }
+.flexslider img {
+  margin-top: -90px;
+}
 /*滚动新闻*/
 .home-news-wrapper {
   height: 36px;

@@ -1,0 +1,31 @@
+.section1-container .h1-wrapper {
+  width: 10em;
+}
+.section1-container h1:after {
+  width: 8.5em;
+}
+.section2-container .fixed-width {
+  background: url("../../../images/erp/ewms1.png") left center, url("../../../images/erp/Orange_04.png") center bottom, url("../../../images/erp/Orange_01.png") right 90px;
+  background-repeat: no-repeat;
+}
+.section2-container .content {
+  padding-right: 0;
+}
+.section3-container .fixed-width {
+  background: url("../../../images/erp/ewms2.png") right center, url("../../../images/erp/Yellow_04.png") right bottom, url("../../../images/erp/Yellow_01.png") left 90px;
+  background-repeat: no-repeat;
+}
+.section3-container .content {
+  width: auto;
+}
+.section4-container .fixed-width {
+  background: url("../../../images/erp/ewms3.png") left center, url("../../../images/erp/cyanblue_01.png") right 90px;
+  background-repeat: no-repeat;
+}
+.section4-container h1 {
+  width: 6em;
+}
+.section5-container .fixed-width {
+  background: url("../../../images/erp/Green_01.png") left 90px, url("../../../images/erp/ewms4.png") right center;
+  background-repeat: no-repeat;
+}
