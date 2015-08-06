@@ -89,6 +89,10 @@ img {
   margin-top: 0;
   color: #2ea7e0;
 }
+.header-nav .nav-group-title .iconfont {
+  font-size: 2em;
+  margin-right: 5px;
+}
 .header-nav .subnav-wrapper {
   position: absolute;
   left: 0;
