@@ -404,13 +404,11 @@ body {
   overflow: hidden;
 }
 .flexslider {
+  height: 100%;
   max-height: calc(100vh - 160px);
   overflow: hidden;
 }
 .flexslider img {
-  margin-top: -90px;
-}
-.home-placeholder-img {
   margin-top: -90px;
 }
 /*滚动新闻*/
