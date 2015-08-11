@@ -3,7 +3,8 @@ $(window).on('load',function() {
 		directionNav: false,
 		animation: 'slide',
 		start: function() {
-			$('.home-placeholder-img').hide();
+			$('body').addClass('loaded');
+			$(".home-news-wrapper,.footer").css('visibility','visible');
 		}
 	});
 });

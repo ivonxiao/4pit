@@ -399,12 +399,13 @@ html {
   overflow: hidden;
 }
 body {
-  background-color: #2ea7e0;
   height: 100%;
   overflow: hidden;
 }
+body.loaded {
+  background-color: #2ea7e0;
+}
 .flexslider {
-  height: 100%;
   max-height: calc(100vh - 160px);
   overflow: hidden;
 }
@@ -413,6 +414,7 @@ body {
 }
 /*滚动新闻*/
 .home-news-wrapper {
+  visibility: hidden;
   height: 36px;
   overflow: hidden;
   background-color: #f7f7f7;
@@ -452,6 +454,7 @@ body {
   border-bottom: 8px solid;
 }
 .footer {
+  visibility: hidden;
   padding: 0;
   height: 30px;
   line-height: 30px;

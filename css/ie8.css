@@ -4,6 +4,9 @@
 	width: 100%;
 	left: 0;
 }
+#index_body .flex-slider {
+	height: 100%;
+}
 #index_body .flex-control-nav {
 	top: 75%;
 }
