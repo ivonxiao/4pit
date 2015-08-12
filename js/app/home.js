@@ -5,11 +5,20 @@ $(window).on('load',function() {
 		start: function() {
 			$('body').addClass('loaded');
 			$(".home-news-wrapper,.footer").css('visibility','visible');
+			/*图片懒加载*/
+			$(".flexslider").find('img').each(function() {
+				var $self = $(this),
+					url = $self.data('src');
+				if(url) {
+					this.src= url;
+				}
+			});
 		}
 	});
 });
 
 $(function() {
+
 	/*
 	滚动新闻
 	 */
