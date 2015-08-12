@@ -1,0 +1,101 @@
+@import (less) "app/mixin/global.less";
+.i-timeline-container {
+	position: relative;
+	width: 500px;
+	margin: 0 auto;
+	overflow: hidden;
+	&:before {
+		content: '';
+		position: absolute;
+		width: 5px;
+		height: 100%;
+		display: block;
+		left: 50%;
+		margin-left: -2px;
+		background-color: #ccc;
+	}
+	>li {
+		position: relative;
+		float: left;
+		width: 100%;
+		padding: 30px 0;
+		&:nth-child(2) {
+			.i-timeline-icon {
+				border-color: rgb(254,118,42);
+			}
+		}
+		&:nth-child(3) {
+			.i-timeline-icon {
+				border-color: rgb(252,111,32);
+			}
+		}
+		&:nth-child(4) {
+			.i-timeline-icon {
+				border-color: rgb(194,192,193);
+			}
+		}
+		&:nth-child(5) {
+			.i-timeline-icon {
+				border-color: rgb(250,116,31);
+			}
+		}
+	}
+	.i-timeline-start,
+	.i-timeline-end {
+		&:before {
+			content: '';
+			position: absolute;
+			width: 16px;
+			height: 16px;
+			display: block;
+			left: 50%;
+			margin-left: -8px;
+			background-color: #ccc;
+		}
+	}
+	.i-timeline-start {
+		&:before {
+			top: 0;
+			border-radius: 50%;
+		}	
+	}
+	.i-timeline-end {
+		&:before {
+			bottom: 0;
+			.transform-mixin(rotate(45deg));
+		}
+	}
+	.i-timeline-icon {
+		position: absolute;
+		left: 50%;
+		margin-left: -13px;
+		display: block;
+		width: 26px;
+		height: 26px;
+		border-radius: 50%;
+		border: 5px solid rgb(229,82,127);
+		background-color: #fff;
+	}
+	.i-timeline-time,
+	.i-timeline-desc {
+		float: left;
+		width: 50%;
+		padding: 0 20px;
+	}
+	.i-timeline-time {
+		font-size: 1.5em;
+		font-weight: 700;
+		text-align: right;
+	}
+	.i-timeline-desc {
+		text-align: left;
+	}
+	.i-timeline-push {
+		margin-left: 50%;
+		text-align: left;
+	}
+	.i-timeline-pull {
+		margin-left: -100%;
+		text-align: right;
+	}
+}
