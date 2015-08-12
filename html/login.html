@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>系统登录|4PNT前海四方网络科技</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta name="renderer" content="ie-stand">
+	<link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/app/base.css">
+	<link rel="import" href="include/bootstrap.ie8.html?__inline">
+	<style>
+		h1 {
+			margin-top: 0;
+			padding-bottom: 5px;
+			font-size: 1.5em;
+			font-weight: 700;
+			margin-bottom: 15px;
+			border-bottom: 1px solid #ccc;
+		}
+		.content-wrapper {
+			background-color: rgb(46,167,224);
+		}
+		.content-wrapper .content-title:before {
+			left: 0;
+		}
+		.login-main {
+			background: url("../images/login_bg.jpg") no-repeat;
+			text-align: right;
+			padding: 50px 0;
+		}
+		.login-form {
+			  display: inline-block;
+			  vertical-align: middle;
+			  width: 320px;
+			  padding: 50px 30px;
+			  border: 1px solid #E5E5E5;
+			  background-color: #ffffff;
+			  text-align: left;
+			  border-radius: 6px;
+		}
+		.login-form > div {
+			margin-bottom: 15px;
+		}
+		.login-form .validate-code-wrapper .validate-code-input {
+		  width: 140px;
+		}
+		.login-form .validate-code-wrapper img {
+		  width: 60px;
+		  height: 30px;
+		  margin-left: 5px;
+		}
+		.login-form .validate-code-wrapper .next-validate-code {
+		  margin-top: 10px;
+		}
+		.login-form .login-submit {
+		  background-color: rgb(46,167,224);
+		  color: #ffffff;
+		}
+		.login-footer {
+			margin-top: 15px;
+		}
+	</style>
+</head>
+<body>
+	<link rel="import" href="include/header.html?__inline">
+	<div class="content-wrapper">
+		<div class="login-main container">
+			<form action=""  class="login-form">
+				<h1 class="content-title">
+					<span>用户登录</span>
+				</h1>
+				<div class="input-group">
+				 	<span class="input-group-addon iconfont icon-yonghu"></span>
+				 	<input type="text" class="form-control" placeholder="身份证号/用户名">
+				</div>
+				<div class="input-group">
+				 	<span class="input-group-addon iconfont icon-cipher"></span>
+				 	<input type="text" class="form-control" placeholder="密码">
+				</div>
+				<div class="clearfix validate-code-wrapper">
+					<input type="text" class="form-control pull-left validate-code-input" placeholder="验证码">
+					<img src="" alt=""  class="pull-left">
+					<a href="" class="pull-right next-validate-code">换一张</a>
+				</div>
+				<div class="clearfix">
+					<a href="" class="forget-link">忘记密码？</a>
+				</div>
+				<div>
+					<input class="form-control login-submit" type="submit" value="登录">
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+<div class="text-center login-footer">
+	&copy;2015 <a href="http://www.4pnt.com/" target="_blank">4PNT Network Technology Ltd. Inc</a>&nbsp;深圳市前海四方网络科技有限公司版权所有
+</div>
