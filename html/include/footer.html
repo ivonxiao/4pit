@@ -3,5 +3,5 @@
 </div>
 <script>
 	// iPAD下CSS的hover属性兼容处理
-	document.addEventListener('touchstart',function(){},false);
+	document.addEventListener && document.addEventListener('touchstart',function(){},false);
 </script>
