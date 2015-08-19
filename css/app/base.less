@@ -127,6 +127,21 @@ img {
 		
 		line-height: 2;
 		font-size: 14px;
+		&.service-subnav {
+			text-align: center;
+			img {
+				display: block;
+				margin-bottom: 15px;
+			}
+			li {
+				float: none;
+				display: inline-block;
+				margin: 20px 30px;
+			}
+			a {
+				margin: 0;
+			}
+		}
 		a {
 			padding: 0;
 			margin-right: 30px;
@@ -143,6 +158,32 @@ img {
 			display: table;
 			clear: both;
 		}
+	}
+	.subnav-solution {
+		position: relative;
+		li {
+			width: 100%;
+			&:hover {
+				.subnav-solution-content {
+					display: block;
+				}
+			}
+
+		}
+		.nav-group-title {
+			width: 18em;
+			margin: 0;
+			padding: 3px 0;
+			background-color: #eee;
+		}
+	}
+	.subnav-solution-content {
+		display: none;
+		position: absolute;
+		left: 18em;
+		top: 0;
+		margin-top: 30px;
+		margin-left: 30px;
 	}
 	li {
 		&.website-logo{
