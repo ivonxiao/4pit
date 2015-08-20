@@ -1,7 +1,7 @@
 @charset "utf-8";
+@import url("../iconfont.css");
 /*字体大小*/
 /*引入字体图标样式*/
-@import url("../iconfont.css");
 /*基础样式*/
 html {
   font-size: 14px;
@@ -90,7 +90,7 @@ img {
   color: #2ea7e0;
 }
 .header-nav .nav-group-title .iconfont {
-  font-size: 2em;
+  font-size: 1.8em;
   margin-right: 5px;
 }
 .header-nav .subnav-wrapper {
@@ -158,10 +158,13 @@ img {
 }
 .header-nav .subnav-solution {
   position: relative;
+  padding-bottom: 0;
+  height: 280px;
 }
 .header-nav .subnav-solution li {
   width: 100%;
 }
+.header-nav .subnav-solution li.default .subnav-solution-content,
 .header-nav .subnav-solution li:hover .subnav-solution-content {
   display: block;
 }
@@ -170,14 +173,27 @@ img {
   margin: 0;
   padding: 3px 0;
   background-color: #eee;
+  color: inherit;
+}
+.header-nav .subnav-solution .nav-group-title:after {
+  content: '>';
+  float: right;
+  line-height: 2;
+}
+.header-nav .subnav-solution .nav-group-title:hover {
+  color: #2ea7e0;
 }
 .header-nav .subnav-solution-content {
   display: none;
   position: absolute;
   left: 18em;
   top: 0;
-  margin-top: 30px;
+  bottom: 0;
+  right: 0;
+  padding-top: 30px;
+  padding-left: 15px;
   margin-left: 30px;
+  background-color: #eaeaea;
 }
 .header-nav li.website-logo {
   margin-right: 30px;

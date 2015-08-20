@@ -97,7 +97,7 @@ img {
 		margin-top: 0;
 		color: @highlight-color;
 		.iconfont {
-			font-size: 2em;
+			font-size: 1.8em;
 			margin-right: 5px;
 		}
 	}
@@ -161,8 +161,11 @@ img {
 	}
 	.subnav-solution {
 		position: relative;
+		padding-bottom: 0;
+		height: 280px;
 		li {
 			width: 100%;
+			&.default,
 			&:hover {
 				.subnav-solution-content {
 					display: block;
@@ -175,6 +178,15 @@ img {
 			margin: 0;
 			padding: 3px 0;
 			background-color: #eee;
+			color: inherit;
+			&:after {
+				content: '>';
+				float: right;
+				line-height: 2;
+			}
+			&:hover {
+				color: @highlight-color;
+			}
 		}
 	}
 	.subnav-solution-content {
@@ -182,8 +194,12 @@ img {
 		position: absolute;
 		left: 18em;
 		top: 0;
-		margin-top: 30px;
+		bottom: 0;
+		right: 0;
+		padding-top: 30px;
+		padding-left: 15px;
 		margin-left: 30px;
+		background-color: #eaeaea;
 	}
 	li {
 		&.website-logo{

@@ -4,9 +4,9 @@ fis.config.merge({
     }
 });
 
-/*fis.config.set('roadmap.path',[
+fis.config.set('roadmap.path',[
 	{
 		reg: '**',
 		release: '/dist$&'
 	}
-]);*/
+]);
