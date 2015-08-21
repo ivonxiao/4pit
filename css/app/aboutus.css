@@ -31,4 +31,5 @@
 /*公司概况*/
 .company-about-content p {
   line-height: 1.8;
+  text-indent: 2em;
 }

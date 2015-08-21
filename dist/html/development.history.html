@@ -2,15 +2,15 @@
 <html lang="zh-CN">
 <head>
 	<meta charset="UTF-8">
-	<title>4PNT四方网络科技|关于我们</title>
+	<title>4PNT四方网络科技|发展历程</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta name="renderer" content="ie-stand">
 	<link rel="stylesheet" href="http://ivonxiao.github.io/4pit/dist/css/bootstrap/bootstrap.min_9b69a9b.css">
-	<link rel="stylesheet" href="http://ivonxiao.github.io/4pit/dist/css/flexslider/flexslider_4f24c39.css">
 	<link rel="stylesheet" href="http://ivonxiao.github.io/4pit/dist/css/app/base_3e113c1.css">
 	<link rel="stylesheet" href="http://ivonxiao.github.io/4pit/dist/css/app/service_fc928b0.css">
 	<link rel="stylesheet" href="http://ivonxiao.github.io/4pit/dist/css/app/aboutus_a627708.css">
+	<link rel="stylesheet" href="http://ivonxiao.github.io/4pit/dist/css/i-timeline_5564e2c.css">
 	<!-- Respond.js for IE8 support of media queries -->
 <!--[if lt IE 9]>
   	<link rel="stylesheet" href="http://ivonxiao.github.io/4pit/dist/css/ie8_32291ff.css">
@@ -175,8 +175,8 @@
 							公司概况
 						</a>
 					</li>
-					<li>
-						<a href="development.history.html">
+					<li class="active">
+						<a href="#">
 							<span class="iconfont icon-weihu"></span>
 							发展历程
 						</a>
@@ -187,47 +187,65 @@
 							公司文化
 						</a>
 					</li>
-					<li class="active">
-						<a href="">
-							<span class="iconfont icon-book"></span>
+					<li>
+						<a href="aboutus.html">
+							<span class="iconfont icon-kefu"></span>
 							联系我们
 						</a>
 					</li>
 				</ul>
 			</div>
-			<div class="main-content">
-				<h2 class="content-title">联系我们</h2>
-				<p>深圳市前海四方网络科技有限公司</p>
-				<table class="contact-table">
-					<tr>
-						<th colspan="2">在线咨询</th>
-					</tr>
-					<tr>
-						<td>QQ：2508935692</td>
-						<td>QQ：2022034472 </td>
-					</tr>
-					<tr>
-						<th colspan="2">微信公众号</th>
-					</tr>
-					<tr>
-						<td>
-							<img src="http://ivonxiao.github.io/4pit/dist/images/weixin_4pnt_4f0d6cd.jpg" alt="驼铃 com4pnt" title="驼铃 com4pnt" width="140">
-						</td>
-					</tr>
-					<tr>
-						<th colspan="2">邮件</th>
-					</tr>
-					<tr>
-						<td>
-							<a href="mailto:camelbell@4pnt.com">
-								camelbell@4pnt.com
-							</a>
-						</td>
-					</tr>
-				</table>
+			<div class="main-content company-about-content">
+				<h2 class="content-title">公司历程</h2>
+				<ol class="i-timeline-container">
+					<li class="i-timeline-start"></li>
+					<li>
+						<div class="i-timeline-time">公元2000年</div>
+						<div class="i-timeline-icon"></div>
+						<div class="i-timeline-desc">在全球第一次电子商务浪潮兴起、中国加入WTO，及中国现代物流兴起之时，团队主要成员在国内最早从事互联网物流平台规划与运营
+						</div>
+					</li>
+					<li>
+						<div class="i-timeline-time i-timeline-push">公元2002年</div>
+						<div class="i-timeline-icon"></div>
+						<div class="i-timeline-desc i-timeline-pull">
+							团队主要成员设计与规划了国内第一套基于互联网的大规模化第三方物流运营管理平台
+						</div>
+					</li>
+					<li>
+						<div class="i-timeline-time">公元2004年</div>
+						<div class="i-timeline-icon"></div>
+						<div class="i-timeline-desc">
+							团队成员在国内率先参与设计开发与运营跨境电商出口电子商务平台，并在美国设立海外仓。
+						</div>
+					</li>
+					<li>
+						<div class="i-timeline-time i-timeline-push">公元2008年</div>
+						<div class="i-timeline-icon"></div>
+						<div class="i-timeline-desc i-timeline-pull">
+							与淘宝开始合作，提供电商物流解决方案。
+						</div>
+					</li>
+					<li>
+						<div class="i-timeline-time">公元2012年</div>
+						<div class="i-timeline-icon"></div>
+						<div class="i-timeline-desc">
+							成为4PX科技集团成员，打造以新一代信息技术为支撑的具有国际竞争力的一站式跨境电商服务平台。
+						</div>
+					</li>
+					<li>
+						<div class="i-timeline-time i-timeline-push">公元2015年</div>
+						<div class="i-timeline-icon"></div>
+						<div class="i-timeline-desc i-timeline-pull">
+							新战略新启航
+						</div>
+					</li>
+					<li class="i-timeline-end"></li>
+				</ol>
 			</div>
 		</div>
 	</div>
+
 	<div class="sidemenu-container">
 	<div class="sidemenu-contact">
 		<span class="iconfont icon-kefubu"></span>
@@ -284,5 +302,6 @@
 	// iPAD下CSS的hover属性兼容处理
 	document.addEventListener && document.addEventListener('touchstart',function(){},false);
 </script>
+	<script src="http://ivonxiao.github.io/4pit/dist/js/i-timeline_d41d8cd.js"></script>
 </body>
 </html>
