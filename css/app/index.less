@@ -17,24 +17,19 @@ body {
 		margin-top: -90px;
 	}
 }
-/*滚动新闻*/
+/*新闻*/
 .home-news-wrapper {
 	visibility: hidden;
 	height: 36px;
-	overflow: hidden;
+	line-height: 36px;
 	background-color: #f7f7f7;
 	a {
 		color: #898989;
-	}
-	.newslist-link {
-		display: inline-block;
-		margin-top: 6px;
-		font-size: 1.2 * @base-fontsize;
-		&:after {
-			display: inline-block;
-			content: '|';
-			margin: 0 6px;
-		}
+		overflow: hidden;
+	    white-space: nowrap;
+	    text-overflow: ellipsis;
+	    width: 100%;
+	    display: block;
 	}
 }
 .home-news-list,

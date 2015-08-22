@@ -86,6 +86,9 @@ img {
 	border-top: 1px solid #e5e5e5;
 	border-bottom: 1px solid #e5e5e5;
 	font-size: 16px;
+	.container {
+		position: relative;
+	}
 	&.top-hover {
 		position: fixed;
 		top: 0;
@@ -103,28 +106,22 @@ img {
 	}
 	.subnav-wrapper {
 		position: absolute;
-		left: 0;
+		left: 330px;
 		right: 0;
 		background-color: @bg-subnav;
-		width: 100%;
+		width: 680px;
 		/* 登录框.form-control的z-index值为2*/
 		z-index: 3;
 		visibility: hidden;
-		transition: visibility 0.1s ease-in-out;
+		transition: visibility 0.1s;
+		li {
+			float: none;
+		}
 	}
 	.subnav {
 		margin: auto;
 		padding: 30px;
-		@media (min-width: 768px) {
-			width: 750px;
-		}
-		@media (min-width: 992px) {
-			width: 970px;
-		}
-		@media (min-width: 1200px) {
-			width: 1170px;
-		}
-		
+				
 		line-height: 2;
 		font-size: 14px;
 		&.service-subnav {
@@ -162,7 +159,7 @@ img {
 	.subnav-solution {
 		position: relative;
 		padding-bottom: 0;
-		height: 280px;
+		height: 300px;
 		li {
 			width: 100%;
 			&.default,
@@ -203,7 +200,6 @@ img {
 	}
 	li {
 		&.website-logo{
-			margin-right: 30px;
 			&:after {
 				content: none;
 			}

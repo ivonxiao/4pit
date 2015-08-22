@@ -1,7 +1,7 @@
 @charset "utf-8";
-@import url("../iconfont.css");
 /*字体大小*/
 /*引入字体图标样式*/
+@import url("../iconfont.css");
 /*基础样式*/
 html {
   font-size: 14px;
@@ -78,6 +78,9 @@ img {
   border-bottom: 1px solid #e5e5e5;
   font-size: 16px;
 }
+.header-nav .container {
+  position: relative;
+}
 .header-nav.top-hover {
   position: fixed;
   top: 0;
@@ -95,35 +98,23 @@ img {
 }
 .header-nav .subnav-wrapper {
   position: absolute;
-  left: 0;
+  left: 330px;
   right: 0;
   background-color: #efefef;
-  width: 100%;
+  width: 680px;
   /* 登录框.form-control的z-index值为2*/
   z-index: 3;
   visibility: hidden;
-  transition: visibility 0.1s ease-in-out;
+  transition: visibility 0.1s;
+}
+.header-nav .subnav-wrapper li {
+  float: none;
 }
 .header-nav .subnav {
   margin: auto;
   padding: 30px;
   line-height: 2;
   font-size: 14px;
-}
-@media (min-width: 768px) {
-  .header-nav .subnav {
-    width: 750px;
-  }
-}
-@media (min-width: 992px) {
-  .header-nav .subnav {
-    width: 970px;
-  }
-}
-@media (min-width: 1200px) {
-  .header-nav .subnav {
-    width: 1170px;
-  }
 }
 .header-nav .subnav.service-subnav {
   text-align: center;
@@ -159,7 +150,7 @@ img {
 .header-nav .subnav-solution {
   position: relative;
   padding-bottom: 0;
-  height: 280px;
+  height: 300px;
 }
 .header-nav .subnav-solution li {
   width: 100%;
@@ -194,9 +185,6 @@ img {
   padding-left: 15px;
   margin-left: 30px;
   background-color: #eaeaea;
-}
-.header-nav li.website-logo {
-  margin-right: 30px;
 }
 .header-nav li.website-logo:after {
   content: none;
@@ -467,25 +455,20 @@ body.loaded {
 .flexslider img {
   margin-top: -90px;
 }
-/*滚动新闻*/
+/*新闻*/
 .home-news-wrapper {
   visibility: hidden;
   height: 36px;
-  overflow: hidden;
+  line-height: 36px;
   background-color: #f7f7f7;
 }
 .home-news-wrapper a {
   color: #898989;
-}
-.home-news-wrapper .newslist-link {
-  display: inline-block;
-  margin-top: 6px;
-  font-size: 16.8px;
-}
-.home-news-wrapper .newslist-link:after {
-  display: inline-block;
-  content: '|';
-  margin: 0 6px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
+  display: block;
 }
 .home-news-list,
 .news-pager-nav {
