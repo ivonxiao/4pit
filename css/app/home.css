@@ -391,14 +391,14 @@ img {
 }
 .sidemenu-container:hover {
   width: 235px;
-  height: 450px;
+  height: 400px;
   padding-top: 150px;
 }
 .sidemenu-container .sidemenu-content-wrapper {
   padding: 15px;
   float: left;
   width: 200px;
-  height: 450px;
+  height: 400px;
   background-color: #fff;
   margin-top: -150px;
   margin-right: -200px;
