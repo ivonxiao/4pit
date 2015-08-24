@@ -30,6 +30,7 @@
 .icon-qunxinxi:before { content: "\e616"; }
 .icon-gonggongfuwu:before { content: "\e61d"; }
 .icon-xinwengonggao:before { content: "\e61f"; }
+.icon-daibanyewu:before { content: "\e623"; }
 .icon-shezhi:before { content: "\e610"; }
 .icon-huodongzhongxin:before { content: "\e60a"; }
 .icon-cipher:before { content: "\e603"; }
@@ -42,8 +43,12 @@
 .icon-tiaojian:before { content: "\e604"; }
 .icon-wangluo:before { content: "\e617"; }
 .icon-yonghu:before { content: "\e600"; }
+.icon-gouwu:before { content: "\e622"; }
 .icon-kefubu:before { content: "\e605"; }
 .icon-shiliangzhinengduixiang4:before { content: "\e619"; }
 .icon-996tianping:before { content: "\e61a"; }
 .icon-book:before { content: "\e606"; }
+.icon-iconxianlufeiji:before { content: "\e621"; }
+.icon-jiantou:before { content: "\e620"; }
 .icon-shengchanlian:before { content: "\e61b"; }
+.icon-tuolinglogo:before { content: "\e624"; }

@@ -45,6 +45,7 @@ a{
 }
 a:hover {
 	color: @link-hover-color;
+	text-decoration: none;
 }
 
 .my-mark {
@@ -86,6 +87,8 @@ img {
 	border-top: 1px solid #e5e5e5;
 	border-bottom: 1px solid #e5e5e5;
 	font-size: 16px;
+
+	@nav-title-w: 20em;
 	.container {
 		position: relative;
 	}
@@ -98,18 +101,16 @@ img {
 		font-size: @base-fontsize;
 		text-align: left;
 		margin-top: 0;
-		color: @highlight-color;
 		.iconfont {
-			font-size: 1.8em;
+			font-size: 1.5em;
 			margin-right: 5px;
 		}
 	}
 	.subnav-wrapper {
 		position: absolute;
 		left: 330px;
-		right: 0;
+		right: 15px;
 		background-color: @bg-subnav;
-		width: 680px;
 		/* 登录框.form-control的z-index值为2*/
 		z-index: 3;
 		visibility: hidden;
@@ -142,12 +143,18 @@ img {
 		a {
 			padding: 0;
 			margin-right: 30px;
+			&:hover {
+				color: @highlight-color;
+			}
 		}
 		li {
 			margin-right: 30px;
 			position: static;
 			&:after {
 				content:none;
+			}
+			&:hover {
+				cursor: default;
 			}
 		}
 		&:after {
@@ -171,7 +178,7 @@ img {
 
 		}
 		.nav-group-title {
-			width: 18em;
+			width: @nav-title-w;
 			margin: 0;
 			padding: 3px 0;
 			background-color: #eee;
@@ -180,6 +187,7 @@ img {
 				content: '>';
 				float: right;
 				line-height: 2;
+				margin-right: 10px;
 			}
 			&:hover {
 				color: @highlight-color;
@@ -189,14 +197,24 @@ img {
 	.subnav-solution-content {
 		display: none;
 		position: absolute;
-		left: 18em;
+		left: @nav-title-w;
 		top: 0;
 		bottom: 0;
 		right: 0;
 		padding-top: 30px;
 		padding-left: 15px;
 		margin-left: 30px;
-		background-color: #eaeaea;
+		background-color: #fff;
+		a:before {
+			content: '';
+			width: 4px;
+			height: 4px;
+			display: inline-block;
+			background-color: @highlight-color;
+			border-radius: 50%;
+			margin-right: 10px;
+    		vertical-align: middle;
+		}
 	}
 	li {
 		&.website-logo{
@@ -244,6 +262,7 @@ img {
 	}
 	a:hover {
 		text-decoration: none;
+		color: inherit;
 	}
 }
 .logo-tab-item {

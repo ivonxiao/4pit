@@ -63,6 +63,17 @@
 
 	<link rel="import" href="include/sidebar-contact.html?__inline">
 	<link rel="import" href="include/footer.html?__inline">
-	<script src="../js/i-timeline.js"></script>
+	<script src="../js/jquery/jquery-1.11.3.min.js"></script>
+	<script>
+		(function() {
+			var $mainContent = $('.main-content'),
+				contentHeight = $mainContent.height(),
+				pageHeight = $('html').height(),
+				winHeight = $(window).height();
+			if ( pageHeight < winHeight) {
+				$mainContent.height(contentHeight + winHeight - pageHeight);
+			}
+		})();
+	</script>
 </body>
 </html>

@@ -1,7 +1,7 @@
 @charset "utf-8";
+@import url("../iconfont.css");
 /*字体大小*/
 /*引入字体图标样式*/
-@import url("../iconfont.css");
 /*基础样式*/
 html {
   font-size: 14px;
@@ -40,7 +40,8 @@ a {
   color: #333333;
 }
 a:hover {
-  color: #000000;
+  color: #2ea7e0;
+  text-decoration: none;
 }
 .my-mark {
   color: #f53b3c;
@@ -90,18 +91,16 @@ img {
   font-size: 14px;
   text-align: left;
   margin-top: 0;
-  color: #2ea7e0;
 }
 .header-nav .nav-group-title .iconfont {
-  font-size: 1.8em;
+  font-size: 1.5em;
   margin-right: 5px;
 }
 .header-nav .subnav-wrapper {
   position: absolute;
   left: 330px;
-  right: 0;
+  right: 15px;
   background-color: #efefef;
-  width: 680px;
   /* 登录框.form-control的z-index值为2*/
   z-index: 3;
   visibility: hidden;
@@ -135,12 +134,18 @@ img {
   padding: 0;
   margin-right: 30px;
 }
+.header-nav .subnav a:hover {
+  color: #2ea7e0;
+}
 .header-nav .subnav li {
   margin-right: 30px;
   position: static;
 }
 .header-nav .subnav li:after {
   content: none;
+}
+.header-nav .subnav li:hover {
+  cursor: default;
 }
 .header-nav .subnav:after {
   content: '';
@@ -160,7 +165,7 @@ img {
   display: block;
 }
 .header-nav .subnav-solution .nav-group-title {
-  width: 18em;
+  width: 20em;
   margin: 0;
   padding: 3px 0;
   background-color: #eee;
@@ -170,6 +175,7 @@ img {
   content: '>';
   float: right;
   line-height: 2;
+  margin-right: 10px;
 }
 .header-nav .subnav-solution .nav-group-title:hover {
   color: #2ea7e0;
@@ -177,14 +183,24 @@ img {
 .header-nav .subnav-solution-content {
   display: none;
   position: absolute;
-  left: 18em;
+  left: 20em;
   top: 0;
   bottom: 0;
   right: 0;
   padding-top: 30px;
   padding-left: 15px;
   margin-left: 30px;
-  background-color: #eaeaea;
+  background-color: #fff;
+}
+.header-nav .subnav-solution-content a:before {
+  content: '';
+  width: 4px;
+  height: 4px;
+  display: inline-block;
+  background-color: #2ea7e0;
+  border-radius: 50%;
+  margin-right: 10px;
+  vertical-align: middle;
 }
 .header-nav li.website-logo:after {
   content: none;
@@ -226,6 +242,7 @@ img {
 }
 .header-nav a:hover {
   text-decoration: none;
+  color: inherit;
 }
 .logo-tab-item .header-tab-logo {
   display: block;
@@ -469,6 +486,9 @@ body.loaded {
   text-overflow: ellipsis;
   width: 100%;
   display: block;
+}
+.home-news-wrapper a:hover {
+  color: #2ea7e0;
 }
 .home-news-list,
 .news-pager-nav {
