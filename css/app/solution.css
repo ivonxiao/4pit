@@ -1,4 +1,7 @@
 /*字体大小*/
+.indent2 {
+  text-indent: 2em;
+}
 .large-paragraph {
   font-size: 18.2px;
   line-height: 1.8;
@@ -104,64 +107,65 @@
 .solution2-consumer-value {
   position: relative;
   margin-bottom: 60px;
-  height: 185px;
-  background: url("../../images/solution2_1.jpg") no-repeat;
+  height: 200px;
+  background: url("../../images/solution2_1.jpg") no-repeat center;
   background-size: contain;
 }
 .solution2-consumer-value li {
   position: absolute;
   width: 210px;
 }
-.solution2-consumer-value li:nth-child(5) {
+.solution2-consumer-value li:nth-child( 5) {
   top: 150px;
   left: 900px;
 }
 @media (max-width: 1200px) {
-  .solution2-consumer-value li:nth-child(5) {
+  .solution2-consumer-value li:nth-child( 5) {
     top: 130px;
     left: 80%;
   }
 }
-.solution2-consumer-value li:nth-child(4) {
-  top: 0;
+.solution2-consumer-value li:nth-child( 4) {
+  top: -15px;
   left: 690px;
 }
 @media (max-width: 1200px) {
-  .solution2-consumer-value li:nth-child(4) {
+  .solution2-consumer-value li:nth-child( 4) {
     left: 60%;
   }
 }
-.solution2-consumer-value li:nth-child(3) {
+.solution2-consumer-value li:nth-child( 3) {
   top: 150px;
   left: 480px;
 }
 @media (max-width: 1200px) {
-  .solution2-consumer-value li:nth-child(3) {
+  .solution2-consumer-value li:nth-child( 3) {
     top: 130px;
     left: 40%;
   }
 }
-.solution2-consumer-value li:nth-child(2) {
-  top: 0;
+.solution2-consumer-value li:nth-child( 2) {
+  top: -15px;
   left: 270px;
 }
 @media (max-width: 1200px) {
-  .solution2-consumer-value li:nth-child(2) {
+  .solution2-consumer-value li:nth-child( 2) {
     left: 20%;
   }
 }
-.solution2-consumer-value li:nth-child(1) {
+.solution2-consumer-value li:nth-child( 1) {
   top: 150px;
   left: 60px;
 }
 @media (max-width: 1200px) {
-  .solution2-consumer-value li:nth-child(1) {
+  .solution2-consumer-value li:nth-child( 1) {
     top: 130px;
     left: 0%;
   }
 }
 .solution2-value-detail img {
   float: left;
+  width: 60%;
 }
 @media (max-width: 1200px) {
   .solution2-value-detail img {
@@ -171,7 +175,7 @@
 .solution2-value-detail .large-paragraph {
   float: left;
   padding-left: 30px;
-  width: calc(100% - 704px);
+  width: calc(100% - 759px);
 }
 @media (max-width: 1200px) {
   .solution2-value-detail .large-paragraph {
