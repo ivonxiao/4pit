@@ -37,8 +37,18 @@ body {
 	    }
 	}
 	.news-item {
-		list-style-type: disc;
-    	list-style-position: inside;
+		&:before {
+			content: '';
+			width: 4px;
+			height: 4px;
+			border-radius: 50%;
+			background-color: currentColor;
+			position: absolute;
+		    top: 0;
+		    bottom: 0;
+		    margin: auto;
+		    left: -5px;
+		}
 	}
 }
 .home-news-list,
