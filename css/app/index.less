@@ -24,6 +24,7 @@ body {
 	height: 36px;
 	line-height: 36px;
 	background-color: #f7f7f7;
+	font-size: 0.85 * @base-fontsize;
 	a {
 		color: #898989;
 		overflow: hidden;
@@ -34,6 +35,10 @@ body {
 	    &:hover {
 	    	color: @sidebar-link-color-active;
 	    }
+	}
+	.news-item {
+		list-style-type: disc;
+    	list-style-position: inside;
 	}
 }
 .home-news-list,
@@ -71,7 +76,4 @@ body {
 	position: fixed;
 	top: 30px;
 	left: 100px;
-}
-select {
-
 }

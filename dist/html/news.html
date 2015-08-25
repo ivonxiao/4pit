@@ -7,14 +7,21 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta name="renderer" content="ie-stand">
 	<link rel="stylesheet" href="http://ivonxiao.github.io/4pit/dist/css/bootstrap/bootstrap.min_9b69a9b.css">
-	<link rel="stylesheet" href="http://ivonxiao.github.io/4pit/dist/css/app/base_346f461.css">
-	<link rel="stylesheet" href="http://ivonxiao.github.io/4pit/dist/css/app/news_5702106.css">
+	<link rel="stylesheet" href="http://ivonxiao.github.io/4pit/dist/css/app/base_492f07e.css">
+	<link rel="stylesheet" href="http://ivonxiao.github.io/4pit/dist/css/app/news_7516698.css">
 	<!-- Respond.js for IE8 support of media queries -->
 <!--[if lt IE 9]>
   	<link rel="stylesheet" href="http://ivonxiao.github.io/4pit/dist/css/ie8_be1102a.css">
 	<script src="http://ivonxiao.github.io/4pit/dist/js/bootstrap/respond.min_c798fc9.js"></script>
 <![endif]-->
 	<script src="http://ivonxiao.github.io/4pit/dist/js/jquery/jquery-1.11.3.min_6163309.js"></script>
+	<style>
+		.footer {
+			position: fixed;
+			bottom: 0;
+			width: 100%;
+		}
+	</style>
 </head>
 <body>
 	<div class="text-right top-header">
@@ -46,6 +53,7 @@
 			<li>
 				<span class="nav-title">解决方案</span>
 				<div class="subnav-wrapper">
+					<span class="iconfont icon-tuolinglogo"></span>
 					<ul class="subnav subnav-solution">
 						<li class="default" style="margin-top:-30px;">
 							<h2 class="nav-group-title"  style="padding-top:30px;">
@@ -103,6 +111,7 @@
 			<li>
 				<span class="nav-title">产品</span>
 				<div class="subnav-wrapper">
+					<span class="iconfont icon-tuolinglogo"></span>
 					<ul class="subnav subnav-solution">
 						<li class="default" style="margin-top:-30px;">
 							<h2 class="nav-group-title"  style="padding-top:30px;">
@@ -151,14 +160,23 @@
 						<li>
 							<img src="http://ivonxiao.github.io/4pit/dist/images/nav_service1_8d9fce9.png" alt="IT解决方案服务">
 							<a href="#">IT解决方案服务</a>
+							<p>
+								4PNT专注电子商务与物流领域，为客户提供电子商务与物流业务应用系统规划与实施服务
+							</p>
 						</li>
 						<li>
 							<img src="http://ivonxiao.github.io/4pit/dist/images/nav_service2_2613cb0.png" alt="IT运维服务">
-							<a href="#">IT运维服务</a>
+							<a href="#">IT运维与运营服务</a>
+							<p>
+								4PNT为客户提供应用系统的托管与日常运维服务，同时为园区类（如物流园区、商贸市场，及电商产业园等）客户提供应用系统合作运营服务。
+							</p>
 						</li>
 						<li>
 							<img src="http://ivonxiao.github.io/4pit/dist/images/nav_service3_eb629c1.png" alt="驼铃云服务">
 							<a href="#">驼铃云服务</a>
+							<p>
+								4PNT驼铃云平台为电子商务生态成员（包括卖家、买家、物流服务商、增值服务提供商等）提供saas业务应用系统、资源共享、业务撮合、供应链融资等云服务。
+							</p>
 						</li>
 					</ul>
 				</div>
@@ -183,6 +201,18 @@
 							行业新闻
 						</a>
 					</li>
+					<li>
+						<a href="news.html">
+							<span class="iconfont icon-kefu"></span>
+							公司新闻
+						</a>
+					</li>
+					<li>
+						<a href="news.html">
+							<span class="iconfont icon-wodefuwu"></span>
+							最新活动
+						</a>
+					</li>
 				</ul>
 			</div>
 			<div class="main-content news-content">
@@ -194,16 +224,12 @@
 					</p>
 					<ul>
 						<li>
-							<a href="article/1.html" class="col-md-10">三大跨境电商通关服务平台分解</a>
-							<span class="col-md-2">2014-08-21</span>
+							<a href="article/11.html" class="col-md-10">人民币贬值 进口商品价格不涨反跌？</a>
+							<span class="col-md-2">2015-08-23</span>
 						</li>
 						<li>
-							<a href="article/2.html" class="col-md-10">递四方跨境电子通关运营平台助力跨境电商阳光通关</a>
-							<span class="col-md-2">2014-08-12</span>
-						</li>
-						<li>
-							<a href="article/3.html" class="col-md-10">电商供应链及软件服务</a>
-							<span class="col-md-2">2014-07-09</span>
+							<a href="article/news2.html" class="col-md-10">国家互联网中心：2015跨境整体解决方案</a>
+							<span class="col-md-2">2014-08-17</span>
 						</li>
 						<li class="text-center">
 							<a href="javascript:;" class="js-view-more">查看更多新闻</a>
@@ -267,33 +293,14 @@
 </script>
 	<script>
 		(function($) {
-			var $newsContainer = $('.news-content');
-			$newsContainer.on('click','a',function() {
-				var $self = $(this);
-				if($self.hasClass('js-view-more')) {
-					return;
-				}
-				else {
-					var url = this.href;
-					var $container = $('.content-inner-wrapper');
-
-					$.ajax(url, {
-						dataType: 'html'
-					})
-					.done(function(res) {
-						$container.html(res);
-						//footer固定在底端
-						var $mainContent = $('.main-content'),
-							contentHeight = $mainContent.height(),
-							pageHeight = $('html').height(),
-							winHeight = $(window).height();
-						if ( pageHeight < winHeight) {
-							$mainContent.height(contentHeight + winHeight - pageHeight);
-						}
-					});
-				}
-				return false;
-			});
+			//footer固定在底端
+			var $mainContent = $('.main-content'),
+				contentHeight = $mainContent.height(),
+				pageHeight = $('html').height(),
+				winHeight = $(window).height();
+			if ( pageHeight < winHeight) {
+				$mainContent.height(contentHeight + winHeight - pageHeight);
+			}
 		})(jQuery);
 	</script>
 </body>

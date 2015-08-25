@@ -101,6 +101,7 @@ img {
 		font-size: @base-fontsize;
 		text-align: left;
 		margin-top: 0;
+		color: #959595;
 		.iconfont {
 			font-size: 1.5em;
 			margin-right: 5px;
@@ -111,12 +112,27 @@ img {
 		left: 330px;
 		right: 15px;
 		background-color: @bg-subnav;
+		box-shadow: 0 5px 5px #999;
 		/* 登录框.form-control的z-index值为2*/
 		z-index: 3;
-		visibility: hidden;
-		transition: visibility 0.1s;
+		height: 0;
+		overflow: hidden;
+		/* visibility: hidden;
+		transition: visibility 0.1s; */
+		transition: height 0.3s;
 		li {
 			float: none;
+		}
+		.icon-tuolinglogo {
+			position: absolute;
+		    width: 200px;
+		    height: 200px;
+		    font-size: 200px;
+		    right: 0;
+		    bottom: 0;
+		    color: #f9f9f9;
+		    z-index: 2;
+		    line-height: 200px;
 		}
 	}
 	.subnav {
@@ -125,16 +141,20 @@ img {
 				
 		line-height: 2;
 		font-size: 14px;
-		&.service-subnav {
-			text-align: center;
+		&.service-subnav {	
 			img {
-				display: block;
 				margin-bottom: 15px;
 			}
 			li {
-				float: none;
-				display: inline-block;
-				margin: 20px 30px;
+				float: left;
+				width: 33.3%;
+				text-align: center;
+				margin: 0;
+				padding: 0 10px;
+			}
+			p {
+				font-size: 0.85em;
+				line-height: 1.8;
 			}
 			a {
 				margin: 0;
@@ -182,7 +202,6 @@ img {
 			margin: 0;
 			padding: 3px 0;
 			background-color: #eee;
-			color: inherit;
 			&:after {
 				content: '>';
 				float: right;
@@ -236,8 +255,10 @@ img {
 		}
 		&:hover {
 			.subnav-wrapper {
-				visibility: visible;
-				transition: visibility 0.1s ease-in-out;
+				/* visibility: visible;
+				transition: visibility 0.1s ease-in-out; */
+				height: auto;
+				transition: height 0.3s;
 			}
 		}
 	}
