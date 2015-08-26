@@ -12,69 +12,12 @@ body {
 	overflow: hidden;
 }
 .flexslider {
-	max-height: e('calc(100vh - 160px)');
+	max-height: e('calc(100vh - 124px)');
 	overflow: hidden;
 	img {
 		margin-top: -90px;
 	}
 }
-/*新闻*/
-.home-news-wrapper {
-	visibility: hidden;
-	height: 36px;
-	line-height: 36px;
-	background-color: #f7f7f7;
-	font-size: 0.85 * @base-fontsize;
-	a {
-		color: #898989;
-		overflow: hidden;
-	    white-space: nowrap;
-	    text-overflow: ellipsis;
-	    width: 100%;
-	    display: block;
-	    &:hover {
-	    	color: @sidebar-link-color-active;
-	    }
-	}
-	.news-item {
-		&:before {
-			content: '';
-			width: 4px;
-			height: 4px;
-			border-radius: 50%;
-			background-color: currentColor;
-			position: absolute;
-		    top: 0;
-		    bottom: 0;
-		    margin: auto;
-		    left: -5px;
-		}
-	}
-}
-.home-news-list,
-.news-pager-nav {
-	display: inline-block;
-	vertical-align: top;
-}
-.home-news-list {
-	width: 60%;
-	height: 100%;
-	padding: 10px 0;
-	overflow: hidden;
-}
-.news-pager-nav {
-	a {
-		display: block;
-	}
-	.caret {
-		border-width: 8px;
-	}
-	.caret-previous {
-		border-top: 0;
-		border-bottom: 8px solid;
-	}
-}
-
 .footer {
 	visibility: hidden;
 	padding: 0;

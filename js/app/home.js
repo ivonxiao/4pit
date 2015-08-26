@@ -4,7 +4,7 @@ $(window).on('load',function() {
 		animation: 'slide',
 		start: function() {
 			$('body').addClass('loaded');
-			$(".home-news-wrapper,.footer").css('visibility','visible');
+			$(".footer").css('visibility','visible');
 			/*图片懒加载*/
 			$(".flexslider").find('img').each(function() {
 				var $self = $(this),

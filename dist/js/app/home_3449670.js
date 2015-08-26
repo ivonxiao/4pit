@@ -1,1 +1,0 @@
-$(window).on("load",function(){$(".flexslider").flexslider({directionNav:!1,animation:"slide",start:function(){$("body").addClass("loaded"),$(".home-news-wrapper,.footer").css("visibility","visible"),$(".flexslider").find("img").each(function(){var i=$(this),s=i.data("src");s&&(this.src=s)})}})});
